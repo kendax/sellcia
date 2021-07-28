@@ -45,12 +45,16 @@ if(isset($_POST['submit'])){
         $shoes = "Shoes";
         $phonesandtablets ="Phones and tablets";
 
-       if($category == $electronics){mysqli_query($conn,$stmt1);}
-       elseif($category == $shoes){mysqli_query($conn,$stmt2);}
-       elseif($category == $phonesandtablets){mysqli_query($conn,$stmt3);}
-       else{mysqli_query($conn,$stmt4);}
+       if($category == $electronics){mysqli_query($conn,$stmt1);
+}
+       elseif($category == $shoes){mysqli_query($conn,$stmt2);
+}
+       elseif($category == $phonesandtablets){mysqli_query($conn,$stmt3);
+}
+       else{mysqli_query($conn,$stmt4);
+}
                 
-                header('Location:electronics.php?product='.$product);
+                header('Location:indexadmin.php?product='.$product);
                 exit();
            } }else{
 
