@@ -74,8 +74,7 @@
                 <li><a href="electronics.php" >Electronics</a></li>
                 <li><a href="shoes.php">Shoes</a></li>
                 <li><a href="phonesandtablets.php" class="active">Phones and Tablets</a></li>
-                <li><a href="books.php">Books</a></li>
-                <li><a href="uploadform.php">Uploads</a></li>
+                <li><a href="books.php">Books</a></li>              
             </ul>
         </nav>
     </header>
