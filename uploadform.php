@@ -22,24 +22,17 @@
 <header>
         <nav class="nav1">
             <li><a><img src="images/velalogo1.png" alt=""></a></li>
-                <li class="accessories"><a>
-                    <div class="login">Login
-                        <div class="loginlinks">
-                                <button type="button" class="buttonlogin"><a  href="loginform.php" >Login</a></button>
-                                <button type="button"><a href="joinform.php">Join</a></button>
-                        </div>
-                    </div>
-                </a></li>
+                
             <li class="accessories1"><a>Cart</a></li>
             <li class="accessories1"><a>Help</a></li>
         </nav>
         <nav class="nav2">
             <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="electronics.php">Electronics</a></li>
-                <li><a href="shoes.php">Shoes</a></li>
-                <li><a href="phonesandtablets.php">Phones and Tablets</a></li>
-                <li><a href="books.php">Books</a></li>
+                <li><a href="indexadmin.php">Home</a></li>
+                <li><a href="electronicsadmin.php">Electronics</a></li>
+                <li><a href="shoesadmin.php">Shoes</a></li>
+                <li><a href="phonesandtabletsadmin.php">Phones and Tablets</a></li>
+                <li><a href="booksadmin.php">Books</a></li>
                 <li><a href="uploadform.php" class="active">Uploads</a></li>
             </ul>
 
