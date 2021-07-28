@@ -46,7 +46,7 @@ if(isset($_POST['submit']))
       }
       else{
         $password = password_hash($password, PASSWORD_DEFAULT); 
-        $stmt = "INSERT INTO admin (UserName, Password, Email) VALUES('$name','$password','$email')";
+        $stmt = "INSERT INTO users (UserName, Password, Email) VALUES('$name','$password','$email')";
       mysqli_query($conn, $stmt);
 
         header("Location:joinform.php?fields=success");
