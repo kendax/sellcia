@@ -94,7 +94,7 @@
                          <p style="transform:translateY(-50px); font-weight:bold; font-size:15px;">Hi <?php echo htmlspecialchars($_SESSION["username"]); ?></p>
                     </div>
                     <div class="login">
-                        <button type="button" class="buttonlogin" style="transform:translateX(80px);"><a  href="../logout.php" style="color:white;">Logout</a></button>
+                        <button type="button" class="buttonlogin" style="transform:translateX(80px);"><a  href="logout.php" style="color:white;">Logout</a></button>
                     </div>
             </a></li>
             <li class="accessories1" style="transform:translateX(50px); margin-left:0px;"><a><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
