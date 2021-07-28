@@ -3,27 +3,27 @@
  
      // Check if the user is logged in, if not then redirect him to login page
      if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-         header("location: ../loginform.php");
+         header("location: loginform.php");
          exit;
      }
      include_once('connection.php');
 
-     $stmt1 = "SELECT * FROM shopping  where ProductID ='75' ORDER BY ProductID ASC;";
-    $stmt2 = "SELECT * FROM shopping  where ProductID ='57' ORDER BY ProductID ASC;";
-    $stmt3 = "SELECT * FROM shopping  where ProductID ='52' ORDER BY ProductID ASC;";
-    $stmt4 = "SELECT * FROM shopping  where ProductID ='74' ORDER BY ProductID ASC;";
-    $stmt5 = "SELECT * FROM shopping  where ProductID ='55' ORDER BY ProductID ASC;";
-    $stmt6 = "SELECT * FROM shopping  where ProductID ='53' ORDER BY ProductID ASC;";
-    $stmt7 = "SELECT * FROM shopping  where ProductID ='72' ORDER BY ProductID ASC;";
-    $stmt8 = "SELECT * FROM shopping  where ProductID ='59' ORDER BY ProductID ASC;";
-    $stmt9 = "SELECT * FROM shopping  where ProductID ='54' ORDER BY ProductID ASC;";
-    $stmt10 = "SELECT * FROM shopping  where ProductID ='70' ORDER BY ProductID ASC;";
-    $stmt11 = "SELECT * FROM shopping  where ProductID ='58' ORDER BY ProductID ASC;";
-    $stmt12 = "SELECT * FROM shopping  where ProductID ='60' ORDER BY ProductID ASC;";
-    $stmt13 = "SELECT * FROM shopping  where ProductID ='71' ORDER BY ProductID ASC;";
-    $stmt14 = "SELECT * FROM shopping  where ProductID ='56' ORDER BY ProductID ASC;";
-    $stmt15 = "SELECT * FROM shopping  where ProductID ='73' ORDER BY ProductID ASC;";
-    $stmt16 = "SELECT * FROM shopping  where ProductID ='61' ORDER BY ProductID ASC;";
+     $stmt1 = "SELECT * FROM shoes  where ProductID ='75' ORDER BY ProductID ASC;";
+    $stmt2 = "SELECT * FROM shoes  where ProductID ='57' ORDER BY ProductID ASC;";
+    $stmt3 = "SELECT * FROM shoes  where ProductID ='52' ORDER BY ProductID ASC;";
+    $stmt4 = "SELECT * FROM shoes  where ProductID ='74' ORDER BY ProductID ASC;";
+    $stmt5 = "SELECT * FROM shoes  where ProductID ='55' ORDER BY ProductID ASC;";
+    $stmt6 = "SELECT * FROM shoes  where ProductID ='53' ORDER BY ProductID ASC;";
+    $stmt7 = "SELECT * FROM shoes  where ProductID ='72' ORDER BY ProductID ASC;";
+    $stmt8 = "SELECT * FROM shoes  where ProductID ='59' ORDER BY ProductID ASC;";
+    $stmt9 = "SELECT * FROM shoes  where ProductID ='54' ORDER BY ProductID ASC;";
+    $stmt10 = "SELECT * FROM shoes  where ProductID ='70' ORDER BY ProductID ASC;";
+    $stmt11 = "SELECT * FROM shoes  where ProductID ='58' ORDER BY ProductID ASC;";
+    $stmt12 = "SELECT * FROM shoes  where ProductID ='60' ORDER BY ProductID ASC;";
+    $stmt13 = "SELECT * FROM shoes  where ProductID ='71' ORDER BY ProductID ASC;";
+    $stmt14 = "SELECT * FROM shoes  where ProductID ='56' ORDER BY ProductID ASC;";
+    $stmt15 = "SELECT * FROM shoes  where ProductID ='73' ORDER BY ProductID ASC;";
+    $stmt16 = "SELECT * FROM shoes  where ProductID ='61' ORDER BY ProductID ASC;";
     
 
     $result1 = mysqli_query($conn, $stmt1);
