@@ -3,27 +3,27 @@
  
      // Check if the user is logged in, if not then redirect him to login page
      if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-         header("location: ../loginform.php");
+         header("location: loginform.php");
          exit;
      }
      include_once('connection.php');
 
-     $stmt1 = "SELECT * FROM shopping  where ProductID ='36' ORDER BY ProductID ASC;";
-     $stmt2 = "SELECT * FROM shopping  where ProductID ='37' ORDER BY ProductID ASC;";
-     $stmt3 = "SELECT * FROM shopping  where ProductID ='38' ORDER BY ProductID ASC;";
-     $stmt4 = "SELECT * FROM shopping  where ProductID ='39' ORDER BY ProductID ASC;";
-     $stmt5 = "SELECT * FROM shopping  where ProductID ='40' ORDER BY ProductID ASC;";
-     $stmt6 = "SELECT * FROM shopping  where ProductID ='41' ORDER BY ProductID ASC;";
-     $stmt7 = "SELECT * FROM shopping  where ProductID ='42' ORDER BY ProductID ASC;";
-     $stmt8 = "SELECT * FROM shopping  where ProductID ='43' ORDER BY ProductID ASC;";
-     $stmt9 = "SELECT * FROM shopping  where ProductID ='44' ORDER BY ProductID ASC;";
-     $stmt10 = "SELECT * FROM shopping  where ProductID ='45' ORDER BY ProductID ASC;";
-     $stmt11 = "SELECT * FROM shopping  where ProductID ='46' ORDER BY ProductID ASC;";
-     $stmt12 = "SELECT * FROM shopping  where ProductID ='47' ORDER BY ProductID ASC;";
-     $stmt13 = "SELECT * FROM shopping  where ProductID ='48' ORDER BY ProductID ASC;";
-     $stmt14 = "SELECT * FROM shopping  where ProductID ='49' ORDER BY ProductID ASC;";
-     $stmt15 = "SELECT * FROM shopping  where ProductID ='50' ORDER BY ProductID ASC;";
-     $stmt16 = "SELECT * FROM shopping  where ProductID ='51' ORDER BY ProductID ASC;";
+     $stmt1 = "SELECT * FROM books  where ProductID ='36' ORDER BY ProductID ASC;";
+     $stmt2 = "SELECT * FROM books  where ProductID ='37' ORDER BY ProductID ASC;";
+     $stmt3 = "SELECT * FROM books  where ProductID ='38' ORDER BY ProductID ASC;";
+     $stmt4 = "SELECT * FROM books  where ProductID ='39' ORDER BY ProductID ASC;";
+     $stmt5 = "SELECT * FROM books  where ProductID ='40' ORDER BY ProductID ASC;";
+     $stmt6 = "SELECT * FROM books  where ProductID ='41' ORDER BY ProductID ASC;";
+     $stmt7 = "SELECT * FROM books  where ProductID ='42' ORDER BY ProductID ASC;";
+     $stmt8 = "SELECT * FROM books  where ProductID ='43' ORDER BY ProductID ASC;";
+     $stmt9 = "SELECT * FROM books  where ProductID ='44' ORDER BY ProductID ASC;";
+     $stmt10 = "SELECT * FROM books  where ProductID ='45' ORDER BY ProductID ASC;";
+     $stmt11 = "SELECT * FROM books  where ProductID ='46' ORDER BY ProductID ASC;";
+     $stmt12 = "SELECT * FROM books  where ProductID ='47' ORDER BY ProductID ASC;";
+     $stmt13 = "SELECT * FROM books  where ProductID ='48' ORDER BY ProductID ASC;";
+     $stmt14 = "SELECT * FROM books  where ProductID ='49' ORDER BY ProductID ASC;";
+     $stmt15 = "SELECT * FROM books  where ProductID ='50' ORDER BY ProductID ASC;";
+     $stmt16 = "SELECT * FROM books  where ProductID ='51' ORDER BY ProductID ASC;";
      
     
 
