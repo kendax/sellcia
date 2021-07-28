@@ -119,8 +119,7 @@
                 <li><a href="electronicsprofile.php">Electronics</a></li>
                 <li><a href="shoesprofile.php">Shoes</a></li>
                 <li><a href="phonesandtabletsprofile.php">Phones and Tablets</a></li>
-                <li><a href="booksprofile.php">Books</a></li>
-                <li><a href="../uploadform.php">Uploads</a></li>
+                <li><a href="booksprofile.php">Books</a></li>             
             </ul>
         </nav>
     </header>
