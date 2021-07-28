@@ -1,23 +1,30 @@
 <?php
-    
-     include_once('../connection.php');
+     session_start();
+ 
+     // Check if the user is logged in, if not then redirect him to login page
+     if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+         header("location: loginform.php");
+         exit;
+     }
+     include_once('connection.php');
 
-    $stmt1 = "SELECT * FROM shopping  where ProductID ='11' ORDER BY ProductID ASC;";
-    $stmt2 = "SELECT * FROM shopping  where ProductID ='19' ORDER BY ProductID ASC;";
-    $stmt3 = "SELECT * FROM shopping  where ProductID ='68' ORDER BY ProductID ASC;";
-    $stmt4 = "SELECT * FROM shopping  where ProductID ='62' ORDER BY ProductID ASC;";
-    $stmt5 = "SELECT * FROM shopping  where ProductID ='57' ORDER BY ProductID ASC;";
-    $stmt6 = "SELECT * FROM shopping  where ProductID ='72' ORDER BY ProductID ASC;";
-    $stmt7 = "SELECT * FROM shopping  where ProductID ='71' ORDER BY ProductID ASC;";
-    $stmt8 = "SELECT * FROM shopping  where ProductID ='53' ORDER BY ProductID ASC;";
-    $stmt9 = "SELECT * FROM shopping  where ProductID ='20' ORDER BY ProductID ASC;";
-    $stmt10 = "SELECT * FROM shopping  where ProductID ='24' ORDER BY ProductID ASC;";
-    $stmt11 = "SELECT * FROM shopping  where ProductID ='28' ORDER BY ProductID ASC;";
-    $stmt12 = "SELECT * FROM shopping  where ProductID ='31' ORDER BY ProductID ASC;";
-    $stmt13 = "SELECT * FROM shopping  where ProductID ='37' ORDER BY ProductID ASC;";
-    $stmt14 = "SELECT * FROM shopping  where ProductID ='41' ORDER BY ProductID ASC;";
-    $stmt15 = "SELECT * FROM shopping  where ProductID ='44' ORDER BY ProductID ASC;";
-    $stmt16 = "SELECT * FROM shopping  where ProductID ='51' ORDER BY ProductID ASC;";
+    $stmt1 = "SELECT * FROM electronics  where ProductID ='11' ORDER BY ProductID ASC;";
+    $stmt2 = "SELECT * FROM electronics  where ProductID ='19' ORDER BY ProductID ASC;";
+    $stmt3 = "SELECT * FROM electronics  where ProductID ='68' ORDER BY ProductID ASC;";
+    $stmt4 = "SELECT * FROM electronics  where ProductID ='62' ORDER BY ProductID ASC;";
+    $stmt5 = "SELECT * FROM shoes  where ProductID ='57' ORDER BY ProductID ASC;";
+    $stmt6 = "SELECT * FROM shoes  where ProductID ='72' ORDER BY ProductID ASC;";
+    $stmt7 = "SELECT * FROM shoes  where ProductID ='71' ORDER BY ProductID ASC;";
+    $stmt8 = "SELECT * FROM shoes  where ProductID ='53' ORDER BY ProductID ASC;";
+    $stmt9 = "SELECT * FROM phonesandtablets  where ProductID ='20' ORDER BY ProductID ASC;";
+    $stmt10 = "SELECT * FROM phonesandtablets  where ProductID ='24' ORDER BY ProductID ASC;";
+    $stmt11 = "SELECT * FROM phonesandtablets  where ProductID ='28' ORDER BY ProductID ASC;";
+    $stmt12 = "SELECT * FROM phonesandtablets  where ProductID ='31' ORDER BY ProductID ASC;";
+    $stmt13 = "SELECT * FROM books  where ProductID ='37' ORDER BY ProductID ASC;";
+    $stmt14 = "SELECT * FROM books  where ProductID ='41' ORDER BY ProductID ASC;";
+    $stmt15 = "SELECT * FROM books  where ProductID ='44' ORDER BY ProductID ASC;";
+    $stmt16 = "SELECT * FROM books  where ProductID ='51' ORDER BY ProductID ASC;";
+    
 
     $result1 = mysqli_query($conn, $stmt1);
     $result2 = mysqli_query($conn, $stmt2);
@@ -55,7 +62,7 @@
     $rows16 = mysqli_fetch_assoc ($result16);
     
         
-?> 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,9 +70,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-    <link rel="shortcut icon" href="images/sellcialogo3.png" type="image/x-icon" style="min-height:500px;">
+    <link rel="shortcut icon" href="../images/sellcialogo3.png" type="image/x-icon" style="min-height:500px;">
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
-    <link rel="stylesheet" href="css/vela.css">
+    <link rel="stylesheet" href="../css/vela.css">
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
@@ -76,90 +83,55 @@
 	<!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="../css/fonts.css">
 </head>
 <body>
-<header>
-
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="stylesheet" href="vela.css">
-<script src="js/main.js"></script>
-
-<div id="nav">
-<nav class="nav1">
-      <ul>
-     
-            <li><a><img src="images/sellcialogo.png" alt=""></a></li>
-                <li class="accessories" style="margin-left:1030px; font-weight:bold; font-size:15px;"><a>
-                    <div class="login">Login
-                        <div class="loginlinks">
-                                <button type="button" class="buttonlogin"><a  href="loginform.php">Login</a></button>
-                                <button type="button"><a href="joinform.php">Join</a></button>
-                        </div>
+    <header>
+     <link rel="stylesheet" href="../css/vela.css">
+        <nav class="nav1">
+            <li><a><img src="../images/sellcialogo.png" alt=""></a></li>
+            <li class="accessories"><a>
+                     <div class="user" >
+                         <p style="transform:translateY(-50px); font-weight:bold; font-size:15px;">Hi <?php echo htmlspecialchars($_SESSION["username"]); ?></p>
                     </div>
-                </a></li>
-            <li class="accessories1" style="font-weight:bold; font-size:15px;"><a href="loginform.php">Cart</a></li>
-            <li class="accessories1" style="font-weight:bold; font-size:15px;"><a href="help/indexlog.php">Help</a></li>
+                    <div class="login">
+                        <button type="button" class="buttonlogin" style="transform:translateX(80px);"><a  href="logout.php" style="color:white;">Logout</a></button>
+                    </div>
+            </a></li>
+            <li class="accessories1" style="transform:translateX(50px); margin-left:0px;"><a><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+<input type="submit" value="Cart" style="color:white; width:45px; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+</a></li>
+            <li class="accessories1" style="font-weight:bold; font-size:15px;"><a>Help</a></li>
         </nav>
-      </ul>
-    </nav>
-    <link rel="stylesheet" href="vela.css">
-    <script src="js/main.js"></script>
-    <div class="img-mobile" style="margin-left:32%;">
-      <img  style="max-height:150px;"src="images/sellcialogo.png" alt="">
-    </div> 
-    <nav class="nav2" style="font-weight:bold; font-size:15px;">
-        <ul class="menu" id="menu">  
-         <li><div class="user-mobile" style="margin-left:-80px;">
-         <p>Hi,Welcome</p>
-         </div></li>
-         <link rel="stylesheet" href="css/searchbar.css">
-         <link rel="stylesheet" href="https://img.icons8.com/pastel-glyph/64/000000/">
-         <link rel="stylesheet" href="vela.css">
-         <li><div class="search-mobile" style="margin-left:0px;"><form action="searchlog.php" method="POST">
-                    <input class="main" name="search" />
-                    <link rel="stylesheet" href="css/searchbar.css">
-                    <button class="searchicon1" name="submit" style="height:-10px;"></button>
-                    <div class="microphone" style="transform:translateX(0px);">
-                        <div class="mic-stand"></div>
-                    </div>
-                  </form></div></li>
-            <li><a href="index.php" class="active">Home</a></li>
-            <li><a href="electronics.php">Electronics</a></li>
-            <li><a href="shoes.php">Shoes</a></li>
-            <li><a href="phonesandtablets.php">Phones and Tablets</a></li>
-            <li><a href="books.php">Books</a></li>
-            <li><div class="prev-nav1">
-            <link rel="stylesheet" href="vela.css">
-            <li><div class="login1" style="margin-top:-30px;">
-            <button type="button" style="font-size:18px; margin-left:15px;" class="buttonlogin1"><a  href="loginform.php">Login</a></button>
-            <button type="button" style="font-size:18px; margin-left:15px;" class="buttonlogin1"><a href="joinform.php">Join</a></button>
-            <li class="accessories11" style="font-weight:bold; font-size:18px; margin-left:20px;"><a href="loginform.php">Cart</a></li>
-                 <a class="accessories11" style="font-weight:bold; font-size:18px; margin-left:-16px; color:white; margin-top:3px;" href="help/indexlog.php">Help</a>
-              </div></a></li>
-            </div></li>
-        </ul>
-    </nav>
-    <link rel="stylesheet" href="vela.css">
-    <div class="burger" style="transform:translateY(-50px);">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-
-</header>
+        <nav class="nav2" style="font-weight:bold; font-size:15px;">
+            <ul>
+                <li><a href="indexadmin.php" class="active">Home</a></li>
+                <li><a href="electronicsadmin.php">Electronics</a></li>
+                <li><a href="shoesadmin.php">Shoes</a></li>
+                <li><a href="phonesandtabletsadmin.php">Phones and Tablets</a></li>
+                <li><a href="booksadmin.php">Books</a></li>
+                <li><a href="../uploadform.php">Uploads</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="searchbarcode">
-            <link rel="stylesheet" href="css/searchbar.css">
+            <link rel="stylesheet" href="../css/searchbar.css">
             <link rel="stylesheet" href="https://img.icons8.com/pastel-glyph/64/000000/">
-            <div class="container">
-                        <form action="searchlog.php" method="POST">
-                          <input class="main" name="search" style="transform:translateX(-16px);"/>
-                          <button class="searchicon" name="submit"></button>
-                          <div class="microphone" style="transform:translateX(0px);">
-                              <div class="mic-stand"></div>
-                          </div>
-                        </form>
+                <div class="container">
+                    <input class="main"/><span class="searchicon"></span>
+                        <div class="microphone">
+                             <div class="mic-stand"></div>
+                        </div>
                         <div class="icon-holder">
                             <div class="icon" id="parking">
                             <div class="tooltip">Electronics</div>
@@ -184,9 +156,9 @@
                 </div>
         </div>
     </div>
-    <link rel="stylesheet" href="css/vela.css">
+    <link rel="stylesheet" href="../css/vela.css">
     <h1 class="kariba" style="transform:translateY(-50px);">
-  <a href="" class="typewrite" style="font-size:24px;" data-period="2000" data-type='[ "Hi, Welcome To Sellcia.", "We Have All You Need.", "Good Quality.","Fair Prices!", "And We Deliver Everytime." ]'>
+  <a href="" class="typewrite" data-period="2000" data-type='[ "Hi <?php echo htmlspecialchars($_SESSION["username"]); ?>, Welcome To Sellcia.", "We Have All You Need.", "Good Quality.","Fair Prices!", "And We Deliver Everytime." ]'>
     <span class="wrap"></span>
   </a>
 </h1>
@@ -198,9 +170,6 @@
 		 <h2 class="h2 font-weight-bold text-uppercase text-center my-5"><span style="color:white">Our</span> <span style="color:green">Deals</span></h2>
 	  </div>
   </div>
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/vela.css">
-  <script src="js/carouFredsel.js"></script>
   <div class="row">
 	<div class="col-sm-12">
 	  <div class="carousel box-carousel d-none d-sm-block">
@@ -228,7 +197,7 @@
 		  <div class="box">
 			<a href="https://www.solodev.com/" ><i class="fab fa-cc-visa"></i><br>accepted</a>
 		  </div>
-		 <div class="box">
+		  <div class="box">
 			<a href="https://www.solodev.com/product/engage.stml" ><i class="fas fa-blender"></i><br>Electronics</a>
 		  </div>
 		  
@@ -240,157 +209,276 @@
 
 
 	
- 
+  <div class="carousel-mobile box-carousel-mobile d-block d-sm-none">
+	<div class="row d-flex justify-content-center">
+	  <div class="col-xs-6">
+		<div class="box">
+		  <a href="https://www.digitalus.com/" ><i class="fa fa-3x fa-laptop" aria-hidden="true"></i><br>Web Design</a>
+		</div>
+		<div class="box">
+		  <a href="https://www.solodev.com/product/host.stml" ><i class="fa fa-3x fa-cloud" aria-hidden="true"></i><br>Cloud Hosting</a>
+		</div>
+		<div class="box">
+		  <a href="https://www.solodev.com/" ><i class="fa fa-3x fa-users" aria-hidden="true"></i><br>WXP</a>
+		</div>
+	  </div><!-- col-->
+	  <div class="col-xs-6">
+		<div class="box">
+		  <a href="https://www.digitalus.com/" ><i class="fa fa-3x fa-laptop" aria-hidden="true"></i><br>Web Design</a>
+		</div>
+		<div class="box">
+		  <a href="https://www.solodev.com/product/host.stml" ><i class="fa fa-3x fa-cloud" aria-hidden="true"></i><br>Cloud Hosting</a>
+		</div>
+		<div class="box">
+		  <a href="https://www.solodev.com/" class="more-links">More Quick Links</a>
+		</div>
 	  </div><!-- col-->
 	</div>
   </div>
 </div><!-- container-->
 </div>
+
     <div class="container-grid">
-        <link rel="stylesheet" href="css/vela.css">
-        <div id="grid2">
+        <link rel="stylesheet" href="../css/vela.css">
+        <div id="grid">
             <div class="slot1">
-                <a href="products3/slot1.php" style="color:black;">
+                <a href="../products3admin/slot1.php" style="color:black;">
                     <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows1['Image'];?>" alt="" style="max-height:250px;"></div>
                     <div class="product"><?php echo $rows1['Product'];?></div>
                     <div class="description"><?php echo $rows1['Description'];?></div>
                     <div class="price">KSh <?php echo $rows1['Cost'];?></div> 
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" class="buy"  style="color:white;">BUY NOW</a></button> 
+                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="SH8HEB7M6MTPY">
+<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</button> 
                 </a>
             </div>
             <div class="slot2">
-                <a href="products3/slot8.php" style="color:black;">
+                <a href="../products3admin/slot8.php" style="color:black;">
                     <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows2['Image'];?>" alt="" style="max-height:250px;"></div>
                     <div class="product"><?php echo $rows2['Product'];?></div>
                     <div class="description"><?php echo $rows2['Description'];?></div>
                     <div class="price">KSh <?php echo $rows2['Cost'];?></div>
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" class="buy"  style="color:white;">BUY NOW</a></button> 
+                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="F86KSV8M5THXJ">
+<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</button> 
                 </a>  
             </div>
             <div class="slot3">
-                <a href="products3/slot10.php" style="color:black;">
+                <a href="../products3admin/slot10.php" style="color:black;">
                     <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows3['Image'];?>" alt="" style="max-height:230px;"></div>
                     <div class="product"><?php echo $rows3['Product'];?></div>
                     <div class="description"><?php echo $rows3['Description'];?></div>
                     <div class="price">KSh <?php echo $rows3['Cost'];?></div>
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" class="buy"  style="color:white;">BUY NOW</a></button> 
+                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="ZB4BHWVS6FWEW">
+<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</button> 
                 </a>  
             </div>
             <div class="slot4">
-                <a href="products3/slot16.php" style="color:black;">
+                <a href="../products3admin/slot16.php" style="color:black;">
                     <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows4['Image'];?>" alt="" style="max-height:250px;"></div>
                     <div class="product"><?php echo $rows4['Product'];?></div>
                     <div class="description"><?php echo $rows4['Description'];?></div>
                     <div class="price">KSh <?php echo $rows4['Cost'];?></div> 
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" class="buy"  style="color:white;">BUY NOW</a></button>  
+                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="TGKYEM722PTFN">
+<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</button> 
                 </a>   
             </div>
             <div class="slot5">
-                <a href="products2/slot2.php" style="color:black;">
+                <a href="../products2admin/slot2.php" style="color:black;">
                     <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows5['Image'];?>" alt="" style="max-height:250px;"></div>
                     <div class="product"><?php echo $rows5['Product'];?></div>
                     <div class="description"><?php echo $rows5['Description'];?></div>
                     <div class="price">KSh <?php echo $rows5['Cost'];?></div>
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" class="buy"  style="color:white;">BUY NOW</a></button>  
+                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="PG3MV67K5VT5E">
+<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</button> 
                 </a>     
             </div>
             <div class="slot6">
-                <a href="products2/slot7.php" style="color:black;">
+                <a href="../products2admin/slot7.php" style="color:black;">
                     <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows6['Image'];?>" alt="" style="max-height:230px;"></div>
                     <div class="product"><?php echo $rows6['Product'];?></div>
                     <div class="description"><?php echo $rows6['Description'];?></div>
                     <div class="price">KSh <?php echo $rows6['Cost'];?></div> 
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" class="buy"  style="color:white;">BUY NOW</a></button>  
+                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="KKFDYDSQ2VE8J">
+<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</button> 
                 </a>  
             </div>
             <div class="slot7">
-                <a href="products2/slot13.php" style="color:black;">
+                <a href="../products2admin/slot13.php" style="color:black;">
                     <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows7['Image'];?>" alt="" style="max-height:250px;"></div>
                     <div class="product"><?php echo $rows7['Product'];?></div>
                     <div class="description"><?php echo $rows7['Description'];?></div>
                     <div class="price">KSh <?php echo $rows7['Cost'];?></div>  
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" class="buy"  style="color:white;">BUY NOW</a></button>  
+                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="YZXERLQ794VX4">
+<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</button> 
                 </a>  
             </div>
             <div class="slot8">
-                <a href="products2/slot6.php" style="color:black;">
+                <a href="../products2admin/slot6.php" style="color:black;">
                     <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows8['Image'];?>" alt="" style="max-height:250px;"></div>
                     <div class="product"><?php echo $rows8['Product'];?></div>
                     <div class="description"><?php echo $rows8['Description'];?></div>
                     <div class="price">KSh <?php echo $rows8['Cost'];?></div>  
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" class="buy"  style="color:white;">BUY NOW</a></button> 
+                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="Y4C7EH6Z7M4SY">
+<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</button> 
                 </a>   
             </div>
             <div class="slot9">
-                <a href="products/slot1.php" style="color:black;">
+                <a href="../productsadmin/slot1.php" style="color:black;">
                     <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows9['Image'];?>" alt="" style="max-height:230px;"></div>
                     <div class="product"><?php echo $rows9['Product'];?></div>
                     <div class="description"><?php echo $rows9['Description'];?></div>
                     <div class="price">KSh <?php echo $rows9['Cost'];?></div>
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" class="buy"  style="color:white;">BUY NOW</a></button>  
+                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="TG4EYZQFTWQZN">
+<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</button> 
                 </a>  
             </div>
             <div class="slot10">
-                <a href="products/slot5.php" style="color:black;">
+                <a href="../productsadmin/slot5.php" style="color:black;">
                     <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows10['Image'];?>" alt="" style="max-height:230px;"></div>
                     <div class="product"><?php echo $rows10['Product'];?></div>
                     <div class="description"><?php echo $rows10['Description'];?></div>
                     <div class="price">KSh <?php echo $rows10['Cost'];?></div> 
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" style="color:white;">BUY NOW</a></button> 
+                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="3JXSJMFMQT5WC">
+<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</button> 
                 </a> 
             </div>
             <div class="slot11">
-                <a href="products/slot9.php" style="color:black;">
+                <a href="../productsadmin/slot9.php" style="color:black;">
                     <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows11['Image'];?>" alt="" style="max-height:250px;"></div>
                     <div class="product"><?php echo $rows11['Product'];?></div>
                     <div class="description"><?php echo $rows11['Description'];?></div>
                     <div class="price">KSh <?php echo $rows11['Cost'];?></div>  
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" style="color:white;">BUY NOW</a></button> 
+                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="JVBNRKNXYR3RS">
+<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</button> 
                 </a> 
             </div>
             <div class="slot12">
-                <a href="products/slot12.php" style="color:black;">
+                <a href="../productsadmin/slot12.php" style="color:black;">
                     <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows12['Image'];?>" alt="" style="max-height:250px;"></div>
                     <div class="product"><?php echo $rows12['Product'];?></div>
                     <div class="description"><?php echo $rows12['Description'];?></div>
                     <div class="price">KSh <?php echo $rows12['Cost'];?></div> 
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" style="color:white;">BUY NOW</a></button> 
+                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="U2S6L7277XF4C">
+<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</button> 
                 </a>  
             </div>
             <div class="slot13">
-                <a href="products1/slot2.php" style="color:black;">
+                <a href="../products1admin/slot2.php" style="color:black;">
                     <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows13['Image'];?>" alt="" style="max-height:250px;"></div>
                     <div class="product"><?php echo $rows13['Product'];?></div>
                     <div class="description"><?php echo $rows13['Description'];?></div>
                     <div class="price">KSh <?php echo $rows13['Cost'];?></div> 
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" style="color:white;">BUY NOW</a></button> 
+                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="UR7SBG35KC3ZW">
+<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</button> 
                 </a>  
             </div>
             <div class="slot14">
-                <a href="products1/slot6.php" style="color:black;">
+                <a href="../products1admin/slot6.php" style="color:black;">
                     <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows14['Image'];?>" alt="" style="max-height:250px;"></div>
                     <div class="product"><?php echo $rows14['Product'];?></div>
                     <div class="description"><?php echo $rows14['Description'];?></div>
                     <div class="price">KSh <?php echo $rows14['Cost'];?></div> 
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" style="color:white;">BUY NOW</a></button> 
+                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="25HZRLZV3RL9L">
+<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</button> 
                 </a>  
             </div>
             <div class="slot15">
-                <a href="products1/slot9.php" style="color:black;">
+                <a href="../products1admin/slot9.php" style="color:black;">
                     <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows15['Image'];?>" alt="" style="max-height:250px;"></div>
                     <div class="product"><?php echo $rows15['Product'];?></div>
                     <div class="description"><?php echo $rows15['Description'];?></div>
                     <div class="price">KSh <?php echo $rows15['Cost'];?></div>
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" style="color:white;">BUY NOW</a></button> 
+                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="774RJECS8DLWW">
+<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</button> 
                 </a>   
             </div>
             <div class="slot16">
-                <a href="products/slot16.php" style="color:black;">
+                <a href="../products1admin/slot16.php" style="color:black;">
                     <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows16['Image'];?>" alt="" style="max-height:250px;"></div>
                     <div class="product"><?php echo $rows16['Product'];?></div>
                     <div class="description"><?php echo $rows16['Description'];?></div>
                     <div class="price">KSh <?php echo $rows16['Cost'];?></div> 
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" style="color:white;">BUY NOW</a></button> 
+                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="PK5EC3N8JGT28">
+<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</button>  
                 </a>   
             </div>
                         
@@ -414,7 +502,7 @@ You can purchase all your mobile phones, tablets, computers,laptops, and more on
     <section class="footer">
         <footer>
         <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> 
-        <link href="css/footer.css" rel="stylesheet"> 
+        <link href="../css/footer.css" rel="stylesheet"> 
 <!-- Footer -->
 		<footer class="pt-5 pb-4" id="contact">
 			<div class="container">
@@ -536,10 +624,7 @@ You can purchase all your mobile phones, tablets, computers,laptops, and more on
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
-    <script src="js/slider.js"></script>
-    <script src="js/fonts.js"></script>
-    <script src="js/carouFredsel.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/man.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/fonts.js"></script>
 </body>
 </html>
