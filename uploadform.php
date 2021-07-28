@@ -22,7 +22,14 @@
 <header>
         <nav class="nav1">
             <li><a><img src="images/velalogo1.png" alt=""></a></li>
-                
+                <li class="accessories"><a>
+                     <div class="user" >
+                         <p style="transform:translateY(-50px); font-weight:bold; font-size:15px;">Hi <?php echo htmlspecialchars($_SESSION["username"]); ?></p>
+                    </div>
+                    <div class="login">
+                        <button type="button" class="buttonlogin" style="transform:translateX(80px);"><a  href="logout.php" style="color:white;">Logout</a></button>
+                    </div>
+            </a></li>
             <li class="accessories1"><a>Cart</a></li>
             <li class="accessories1"><a>Help</a></li>
         </nav>
