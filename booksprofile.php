@@ -6,7 +6,7 @@
          header("location: ../loginform.php");
          exit;
      }
-     include_once('../connection.php');
+     include_once('connection.php');
 
      $stmt1 = "SELECT * FROM shopping  where ProductID ='36' ORDER BY ProductID ASC;";
      $stmt2 = "SELECT * FROM shopping  where ProductID ='37' ORDER BY ProductID ASC;";
