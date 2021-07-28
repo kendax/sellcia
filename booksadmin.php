@@ -8,7 +8,7 @@
      }
      include_once('connection.php');
 
-     $stmt1 = "SELECT * FROM books  where ProductID ='36' ORDER BY ProductID ASC;";
+     $stmt1 = "SELECT * FROM books  where ProductID ='1' ORDER BY ProductID ASC;";
      $stmt2 = "SELECT * FROM books  where ProductID ='37' ORDER BY ProductID ASC;";
      $stmt3 = "SELECT * FROM books  where ProductID ='38' ORDER BY ProductID ASC;";
      $stmt4 = "SELECT * FROM books  where ProductID ='39' ORDER BY ProductID ASC;";
