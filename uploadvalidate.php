@@ -10,7 +10,7 @@ if(isset($_POST['submit'])){
     $category = $_POST['category'];
     $description = $_POST['description'];
 
-    $currentDir = "https://github.com/kendax/sellcia";
+    $currentDir = "https://sellcia.herokuapp.com";
     $uploadDirectory = "/uploads/"; 
 
     $errors = [];
