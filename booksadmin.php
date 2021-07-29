@@ -11,7 +11,7 @@
      $stmt1 = "SELECT * FROM books  where ProductID ='1' ORDER BY ProductID ASC;";
      $stmt2 = "SELECT * FROM books  where ProductID ='2' ORDER BY ProductID ASC;";
      $stmt3 = "SELECT * FROM books  where ProductID ='3' ORDER BY ProductID ASC;";
-     $stmt4 = "SELECT * FROM books  where ProductID ='39' ORDER BY ProductID ASC;";
+     $stmt4 = "SELECT * FROM books  where ProductID ='4' ORDER BY ProductID ASC;";
      $stmt5 = "SELECT * FROM books  where ProductID ='40' ORDER BY ProductID ASC;";
      $stmt6 = "SELECT * FROM books  where ProductID ='41' ORDER BY ProductID ASC;";
      $stmt7 = "SELECT * FROM books  where ProductID ='42' ORDER BY ProductID ASC;";
@@ -171,7 +171,7 @@
             </div>
             <div class="slot2">
                 <a href="../products1admin/slot2.php" style="color:black;">
-                    <div class="img"><img src="https://sellcia.herokuapp.com/uploads/<?php echo $rows2['Image'];?>" alt="" style="max-height:250px;"></div>
+                    <div class="img"><img src="https://github.com/kendax/sellcia/uploads/<?php echo $rows2['Image'];?>" alt="" style="max-height:250px;"></div>
                     <div class="product"><?php echo $rows2['Product'];?></div>
                     <div class="description"><?php echo $rows2['Description'];?></div>
                     <div class="price">KSh <?php echo $rows2['Cost'];?></div>
