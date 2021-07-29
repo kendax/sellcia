@@ -10,7 +10,7 @@ if(isset($_POST['submit'])){
     $category = $_POST['category'];
     $description = $_POST['description'];
 
-    $currentDir = "https://sellcia.herokuapp.com";
+    $currentDir = getcwd();
     $uploadDirectory = "/uploads/"; 
 
     $errors = [];
