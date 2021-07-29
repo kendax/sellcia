@@ -17,7 +17,7 @@
      $stmt7 = "SELECT * FROM books  where ProductID ='42' ORDER BY ProductID ASC;";
      $stmt8 = "SELECT * FROM books  where ProductID ='43' ORDER BY ProductID ASC;";
      $stmt9 = "SELECT * FROM books  where ProductID ='44' ORDER BY ProductID ASC;";
-     $stmt10 = "SELECT * FROM books  where ProductID ='45' ORDER BY ProductID ASC;";
+     $stmt10 = "SELECT * FROM books  where ProductID ='10' ORDER BY ProductID ASC;";
      $stmt11 = "SELECT * FROM books  where ProductID ='46' ORDER BY ProductID ASC;";
      $stmt12 = "SELECT * FROM books  where ProductID ='47' ORDER BY ProductID ASC;";
      $stmt13 = "SELECT * FROM books  where ProductID ='48' ORDER BY ProductID ASC;";
@@ -291,7 +291,7 @@
             </div>
             <div class="slot10">
                 <a href="../products1admin/slot10.php" style="color:black;">
-                    <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows10['Image'];?>" alt="" style="max-height:230px;"></div>
+                    <div class="img"><img src= $_SERVER['DOCUMENT_ROOT'] . "/uploads/<?php echo $rows10['Image'];?>" alt="" style="max-height:230px;"></div>
                     <div class="product"><?php echo $rows10['Product'];?></div>
                     <div class="description"><?php echo $rows10['Description'];?></div>
                     <div class="price">KSh <?php echo $rows10['Cost'];?></div> 
