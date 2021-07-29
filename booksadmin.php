@@ -156,7 +156,7 @@
         <div id="grid">
             <div class="slot1">
                 <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img"><img src="https://git.heroku.com/sellcia.git/uploads/<?php echo $rows1['Image'];?>" alt="" style="max-height:250px;"></div>
+                    <div class="img"><img src="https://sellcia.herokuapp.com/uploads/<?php echo $rows1['Image'];?>" alt="" style="max-height:250px;"></div>
                     <div class="product"><?php echo $rows1['Product'];?></div>
                     <div class="description"><?php echo $rows1['Description'];?></div>
                     <div class="price">KSh <?php echo $rows1['Cost'];?></div> 
