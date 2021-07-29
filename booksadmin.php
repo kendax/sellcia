@@ -186,7 +186,7 @@
             </div>
             <div class="slot3">
                 <a href="../products1admin/slot3.php" style="color:black;">
-                    <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows3['Image'];?>" alt="" style="max-height:230px;"></div>
+                    <div class="img"><img src="https://github.com/kendax/sellcia/uploads/<?php echo $rows3['Image'];?>" alt="" style="max-height:230px;"></div>
                     <div class="product"><?php echo $rows3['Product'];?></div>
                     <div class="description"><?php echo $rows3['Description'];?></div>
                     <div class="price">KSh <?php echo $rows3['Cost'];?></div>
