@@ -10,8 +10,8 @@ if(isset($_POST['submit'])){
     $category = $_POST['category'];
     $description = $_POST['description'];
 
-    $currentDir = $_SERVER['DOCUMENT_ROOT'];
-    $uploadDirectory = "/uploads/"; 
+    $currentDir = "https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/";
+    $uploadDirectory = "/uploads%2F"; 
 
     $errors = [];
 
