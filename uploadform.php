@@ -89,7 +89,7 @@
          <label for="category" style="font-weight:bold;">Category</label>
         <input type="text" name="category" placeholder="Category Of Product" required style="margin-left:40px;"><br><br>
         <label for="image" style="font-weight:bold;">Upload Image</label>
-        <input type="file" id="files" multiple /><br /><br />
+        <input type="file" name="image" id="files" multiple /><br /><br />
            <button id="send">Upload</button>
              <p id="uploading"></p>
                 <progress value="0" max="100" id="progress"></progress>
