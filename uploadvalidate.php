@@ -33,9 +33,9 @@ if(isset($_POST['submit'])){
             $errors[] = "This file is larger than 64Kib.Sorry,it has to be less than or equal to 64Kib.";
         }
         if(empty($errors)){
-            $didUpload = move_uploaded_file($fileTmpName,$uploadPath);
+            
 
-            if($didUpload){
+            
  
                   $stmt1 = "INSERT INTO electronics (Product, ProductID, Cost, Image, Description) VALUES('$product','$product_id','$cost','$fileName','$description')"; 
                   $stmt2 = "INSERT INTO shoes (Product, ProductID, Cost, Image, Description) VALUES('$product','$product_id','$cost','$fileName','$description')"; 
@@ -56,7 +56,7 @@ if(isset($_POST['submit'])){
                 
                 header('Location:indexadmin.php?product='.$product);
                 exit();
-           } }else{
+            }else{
 
             }
         }else{
