@@ -12,18 +12,18 @@
      $stmt2 = "SELECT * FROM books  where ProductID ='2' ORDER BY ProductID ASC;";
      $stmt3 = "SELECT * FROM books  where ProductID ='3' ORDER BY ProductID ASC;";
      $stmt4 = "SELECT * FROM books  where ProductID ='4' ORDER BY ProductID ASC;";
-     $stmt5 = "SELECT * FROM books  where ProductID ='15' ORDER BY ProductID ASC;";
-     $stmt6 = "SELECT * FROM books  where ProductID ='41' ORDER BY ProductID ASC;";
-     $stmt7 = "SELECT * FROM books  where ProductID ='42' ORDER BY ProductID ASC;";
-     $stmt8 = "SELECT * FROM books  where ProductID ='43' ORDER BY ProductID ASC;";
-     $stmt9 = "SELECT * FROM books  where ProductID ='44' ORDER BY ProductID ASC;";
+     $stmt5 = "SELECT * FROM books  where ProductID ='5' ORDER BY ProductID ASC;";
+     $stmt6 = "SELECT * FROM books  where ProductID ='6' ORDER BY ProductID ASC;";
+     $stmt7 = "SELECT * FROM books  where ProductID ='7' ORDER BY ProductID ASC;";
+     $stmt8 = "SELECT * FROM books  where ProductID ='8' ORDER BY ProductID ASC;";
+     $stmt9 = "SELECT * FROM books  where ProductID ='9' ORDER BY ProductID ASC;";
      $stmt10 = "SELECT * FROM books  where ProductID ='10' ORDER BY ProductID ASC;";
-     $stmt11 = "SELECT * FROM books  where ProductID ='46' ORDER BY ProductID ASC;";
-     $stmt12 = "SELECT * FROM books  where ProductID ='47' ORDER BY ProductID ASC;";
-     $stmt13 = "SELECT * FROM books  where ProductID ='48' ORDER BY ProductID ASC;";
-     $stmt14 = "SELECT * FROM books  where ProductID ='49' ORDER BY ProductID ASC;";
-     $stmt15 = "SELECT * FROM books  where ProductID ='50' ORDER BY ProductID ASC;";
-     $stmt16 = "SELECT * FROM books  where ProductID ='51' ORDER BY ProductID ASC;";
+     $stmt11 = "SELECT * FROM books  where ProductID ='11' ORDER BY ProductID ASC;";
+     $stmt12 = "SELECT * FROM books  where ProductID ='12' ORDER BY ProductID ASC;";
+     $stmt13 = "SELECT * FROM books  where ProductID ='13' ORDER BY ProductID ASC;";
+     $stmt14 = "SELECT * FROM books  where ProductID ='14' ORDER BY ProductID ASC;";
+     $stmt15 = "SELECT * FROM books  where ProductID ='15' ORDER BY ProductID ASC;";
+     $stmt16 = "SELECT * FROM books  where ProductID ='16' ORDER BY ProductID ASC;";
      
     
 
@@ -156,9 +156,8 @@
         <div id="grid">
             <div class="slot1">
                 <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img"><img src="https://sellcia.herokuapp.com/uploads/<?php echo $rows1['Image'];?>" alt="" style="max-height:250px;"></div>
-                    <div class="product"><?php echo $rows1['Product'];?></div>
-                    <div class="description"><?php echo $rows1['Description'];?></div>
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows1['Image'];?>?alt=media" alt="" style="max-height:150px;"></div>
+                    <div class="product"><?php echo $rows1['Product'];?></div>                 
                     <div class="price">KSh <?php echo $rows1['Cost'];?></div> 
                     <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
