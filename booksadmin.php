@@ -158,7 +158,7 @@
                 <a href="../products1admin/slot1.php" style="color:black;">
                     <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows1['Image'];?>?alt=media" alt="" style="max-height:150px;"></div>
                     <div class="product"><?php echo $rows1['Product'];?></div>                 
-                    <div class="price">KSh <?php echo $rows1['Cost'];?></div> 
+                    <div class="price">KSh <?php echo number_format($rows1['Cost']);?></div> 
                     <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RE23U2N5YMMPJ">
