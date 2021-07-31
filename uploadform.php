@@ -123,7 +123,7 @@ document.getElementById("send").addEventListener("click", function() {
 
   if (files.length != 0) {
     for (let i = 0; i < files.length; i++) {
-      var storage = firebase.storage().ref(files[i].name);
+      var storage = firebase.storage().ref().child('uploads/').child(files[i].name);
       var upload = storage.put(files[i]);
       upload.on("state_changed", function progress(snapshot) {
           var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
