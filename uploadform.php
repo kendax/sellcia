@@ -89,7 +89,10 @@
          <label for="category" style="font-weight:bold;">Category</label>
         <input type="text" name="category" placeholder="Category Of Product" required style="margin-left:40px;"><br><br>
         <label for="image" style="font-weight:bold;">Upload Image</label>
-        <input type="file" name="image" id="filetoupload"><br><br>
+        <input type="file" id="files" multiple /><br /><br />
+           <button id="send">Upload</button>
+             <p id="uploading"></p>
+                <progress value="0" max="100" id="progress"></progress>
         <label for="description" style="font-weight:bold;">Description</label>
         <input type="text" name=description placeholder="Description" required style="margin-left:22px;"><br><br>
         <input type="submit" name="submit" value="Upload Information" style="margin-left:70px; background-color:rgb(63, 170, 104); border:none; border-radius:4px; color:white;"><br><br>
@@ -97,6 +100,64 @@
 
     </form>
     </div>
-    
+     
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-storage.js"></script>
+
+<script>
+
+var firebaseConfig = {                                  apiKey: "AIzaSyBi_6vU5tf22KUE15nUZRsHuSiXC8yA_lU",    authDomain: "sellcia.firebaseapp.com",                projectId: "sellcia",                                 storageBucket: "sellcia.appspot.com",                 messagingSenderId: "725264640008",                    appId: "1:725264640008:web:39039f1950d7187170c9bd",
+    measurementId: "G-7367XT0H12"                       };
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script>
+//// CHOICE /////
+var files = [];
+document.getElementById("files").addEventListener("change", function(e) {
+  files = e.target.files;
+});
+
+///// SEND FILES //////
+document.getElementById("send").addEventListener("click", function() {
+
+  if (files.length != 0) {
+    for (let i = 0; i < files.length; i++) {
+      var storage = firebase.storage().ref(files[i].name);
+      var upload = storage.put(files[i]);
+      upload.on("state_changed", function progress(snapshot) {
+          var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          document.getElementById("progress").value = percentage;
+        },
+
+        function error() {alert("Error uploading file.");},
+
+        function complete() {document.getElementById( "uploading").innerHTML += `${files[i].name} uploaded <br />`;}); }
+		
+    } else {alert("No file chosen."); }
+});
+////////////////////////////////////
+
+// GET URL ////////////////////
+document.getElementById("get_url").addEventListener("click", function() {
+  var get_url_file = document.getElementById("name").value;
+  var storage = firebase.storage().ref(get_url_file);
+  storage.getDownloadURL().then(function(url) {document.getElementById("response").innerHTML += `${url}  <br />`; })
+                                         .catch(function(error) {alert("Error encountered."); });
+
+});
+////////////////////////////////////
+
+
+// LIST FILES ////////////////////
+document.getElementById("list_files").addEventListener("click", function() {
+  var storageRef = firebase.storage().ref();
+  storageRef.listAll().then(function(result) {
+  result.items.forEach(function(urlFile) {document.getElementById("response_list").innerHTML +=  `${urlFile}  <br />`; });
+                              }).catch(function(error) {alert("No file chosen."); });											
+});
+
+////////////////////////////////////
+</script>
 </body>
 </html>
