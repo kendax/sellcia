@@ -163,229 +163,125 @@
                 </a>
             </div>
             <div class="slot2">
-                <a href="../products1admin/slot2.php" style="color:black;">
-                    <div class="img"><img src="https://github.com/kendax/sellcia/uploads/<?php echo $rows2['Image'];?>" alt="" style="max-height:250px;"></div>
-                    <div class="product"><?php echo $rows2['Product'];?></div>
-                    <div class="description"><?php echo $rows2['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows2['Cost'];?></div>
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="UR7SBG35KC3ZW">
-<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</button> 
-                </a>  
+                 <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows2['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows2['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows2['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                 </a>
+                 
             </div>
-            <div class="slot3">
-                <a href="../products1admin/slot3.php" style="color:black;">
-                    <div class="img"><img src="https://github.com/kendax/sellcia/uploads/<?php echo $rows3['Image'];?>" alt="" style="max-height:230px;"></div>
-                    <div class="product"><?php echo $rows3['Product'];?></div>
-                    <div class="description"><?php echo $rows3['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows3['Cost'];?></div>
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="6WURD8S3ZHHKU">
-<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</button> 
-                </a>  
+            <div class="slot3">               
+               <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows3['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows3['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows3['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
             <div class="slot4">
-                <a href="../products1admin/slot4.php" style="color:black;">
-                    <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows4['Image'];?>" alt="" style="max-height:250px;"></div>
-                    <div class="product"><?php echo $rows4['Product'];?></div>
-                    <div class="description"><?php echo $rows4['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows4['Cost'];?></div> 
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="YGE4ZH6MB3UFJ">
-<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</button> 
-                </a>   
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows4['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows4['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows4['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
             <div class="slot5">
-                <a href="../products1admin/slot5.php" style="color:black;">
-                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows5['Image'];?>?alt=media" alt="" style="max-height:150px;"></div>
-                    <div class="product"><?php echo $rows5['Product'];?></div>
-                    <div class="description"><?php echo $rows5['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows5['Cost'];?></div>
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="5HMVW7R9S8BDJ">
-<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</button> 
-                </a>     
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows5['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows5['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows5['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
             <div class="slot6">
-                <a href="../products1admin/slot6.php" style="color:black;">
-                    <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows6['Image'];?>" alt="" style="max-height:230px;"></div>
-                    <div class="product"><?php echo $rows6['Product'];?></div>
-                    <div class="description"><?php echo $rows6['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows6['Cost'];?></div> 
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="25HZRLZV3RL9L">
-<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</button> 
-                </a>  
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows6['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows6['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows6['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
             <div class="slot7">
-                <a href="../products1admin/slot7.php" style="color:black;">
-                    <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows7['Image'];?>" alt="" style="max-height:250px;"></div>
-                    <div class="product"><?php echo $rows7['Product'];?></div>
-                    <div class="description"><?php echo $rows7['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows7['Cost'];?></div>  
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="8TCTSSJULPTFN">
-<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</button> 
-                </a>  
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows7['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows7['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows7['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
             <div class="slot8">
-                <a href="../products1admin/slot8.php" style="color:black;">
-                    <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows8['Image'];?>" alt="" style="max-height:250px;"></div>
-                    <div class="product"><?php echo $rows8['Product'];?></div>
-                    <div class="description"><?php echo $rows8['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows8['Cost'];?></div>  
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="CEVW5CTQRJ8Z6">
-<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</button> 
-                </a>   
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows8['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows8['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows8['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
             <div class="slot9">
-                <a href="../products1admin/slot9.php" style="color:black;">
-                    <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows9['Image'];?>" alt="" style="max-height:230px;"></div>
-                    <div class="product"><?php echo $rows9['Product'];?></div>
-                    <div class="description"><?php echo $rows9['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows9['Cost'];?></div>
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="774RJECS8DLWW">
-<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</button> 
-                </a>  
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows9['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows9['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows9['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
             <div class="slot10">
-                <a href="../products1admin/slot10.php" style="color:black;">
-                    <div class="img"><img src= $_SERVER['DOCUMENT_ROOT'] . "/uploads/<?php echo $rows10['Image'];?>" alt="" style="max-height:230px;"></div>
-                    <div class="product"><?php echo $rows10['Product'];?></div>
-                    <div class="description"><?php echo $rows10['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows10['Cost'];?></div> 
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="5E9N9W7DYQWXN">
-<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</button> 
-                </a> 
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows10['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows10['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows10['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
             <div class="slot11">
-                <a href="../products1admin/slot11.php" style="color:black;">
-                    <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows11['Image'];?>" alt="" style="max-height:250px;"></div>
-                    <div class="product"><?php echo $rows11['Product'];?></div>
-                    <div class="description"><?php echo $rows11['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows11['Cost'];?></div>  
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="W7ZFC3D6CKHDE">
-<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</button> 
-                </a> 
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows11['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows11['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows11['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
             <div class="slot12">
-                <a href="../products1admin/slot12.php" style="color:black;">
-                    <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows12['Image'];?>" alt="" style="max-height:250px;"></div>
-                    <div class="product"><?php echo $rows12['Product'];?></div>
-                    <div class="description"><?php echo $rows12['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows12['Cost'];?></div> 
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="KBL2JZ5ZJ82HU">
-<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</button> 
-                </a>  
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows12['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows12['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows12['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
             <div class="slot13">
-                <a href="../products1admin/slot13.php" style="color:black;">
-                    <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows13['Image'];?>" alt="" style="max-height:250px;"></div>
-                    <div class="product"><?php echo $rows13['Product'];?></div>
-                    <div class="description"><?php echo $rows13['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows13['Cost'];?></div> 
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="M5BTULF5LSYDL">
-<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</button> 
-                </a>  
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows13['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows13['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows13['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
             <div class="slot14">
-                <a href="../products1admin/slot14.php" style="color:black;">
-                    <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows14['Image'];?>" alt="" style="max-height:250px;"></div>
-                    <div class="product"><?php echo $rows14['Product'];?></div>
-                    <div class="description"><?php echo $rows14['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows14['Cost'];?></div> 
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="UQ5HLZQFWZ6HY">
-<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</button> 
-                </a>  
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows14['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows14['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows14['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
             <div class="slot15">
-                <a href="../products1admin/slot15.php" style="color:black;">
-                    <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows15['Image'];?>" alt="" style="max-height:250px;"></div>
-                    <div class="product"><?php echo $rows15['Product'];?></div>
-                    <div class="description"><?php echo $rows15['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows15['Cost'];?></div>
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="BSR68DLJU4GHL">
-<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</button> 
-                </a>   
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows15['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows15['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows15['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
             <div class="slot16">
-                <a href="../products1admin/slot16.php" style="color:black;">
-                    <div class="img"><img src="http://localhost:8080/code/VELA/uploads/<?php echo $rows16['Image'];?>" alt="" style="max-height:250px;"></div>
-                    <div class="product"><?php echo $rows16['Product'];?></div>
-                    <div class="description"><?php echo $rows16['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows16['Cost'];?></div> 
-                    <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="PK5EC3N8JGT28">
-<input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</button> 
-                </a>   
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows16['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows16['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows16['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
                         
         </div>
