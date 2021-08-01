@@ -156,7 +156,7 @@
         <div id="grid">
             <div class="slot1">
                 <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img" style="display:block; margin:auto;"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows1['Image'];?>?alt=media" alt="" style="max-height:150px;"></div>
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows1['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
                     <div class="product" style="text-align:center;"><?php echo $rows1['Product'];?></div>                 
                     <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows1['Cost']);?></div> 
                     <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
