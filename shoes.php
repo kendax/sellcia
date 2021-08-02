@@ -9,7 +9,15 @@
     $stmt6 = "SELECT * FROM shoes  where ProductID ='6' ORDER BY ProductID ASC;";
     $stmt7 = "SELECT * FROM shoes  where ProductID ='7' ORDER BY ProductID ASC;";
     $stmt8 = "SELECT * FROM shoes  where ProductID ='8' ORDER BY ProductID ASC;";
-    
+    $stmt9 = "SELECT * FROM shoes  where ProductID ='9' ORDER BY ProductID ASC;";
+    $stmt10 = "SELECT * FROM shoes  where ProductID ='10' ORDER BY ProductID ASC;";
+    $stmt11 = "SELECT * FROM shoes  where ProductID ='11' ORDER BY ProductID ASC;";
+    $stmt12 = "SELECT * FROM shoes  where ProductID ='12' ORDER BY ProductID ASC;";
+    $stmt13 = "SELECT * FROM shoes  where ProductID ='13' ORDER BY ProductID ASC;";
+    $stmt14 = "SELECT * FROM shoes  where ProductID ='14' ORDER BY ProductID ASC;";
+    $stmt15 = "SELECT * FROM shoes  where ProductID ='15' ORDER BY ProductID ASC;";
+    $stmt16 = "SELECT * FROM shoes  where ProductID ='16' ORDER BY ProductID ASC;";
+   
 
     $result1 = mysqli_query($conn, $stmt1);
     $result2 = mysqli_query($conn, $stmt2);
@@ -19,6 +27,14 @@
     $result6 = mysqli_query($conn, $stmt6);
     $result7 = mysqli_query($conn, $stmt7);
     $result8 = mysqli_query($conn, $stmt8);
+    $result9 = mysqli_query($conn, $stmt9);
+    $result10 = mysqli_query($conn, $stmt10);
+    $result11 = mysqli_query($conn, $stmt11);
+    $result12 = mysqli_query($conn, $stmt12);
+    $result13 = mysqli_query($conn, $stmt13);
+    $result14 = mysqli_query($conn, $stmt14);
+    $result15 = mysqli_query($conn, $stmt15);
+    $result16 = mysqli_query($conn, $stmt16);
     
 
     $rows1 = mysqli_fetch_assoc ($result1);
@@ -29,6 +45,14 @@
     $rows6 = mysqli_fetch_assoc ($result6);
     $rows7 = mysqli_fetch_assoc ($result7);
     $rows8 = mysqli_fetch_assoc ($result8);
+    $rows9 = mysqli_fetch_assoc ($result9);
+    $rows10 = mysqli_fetch_assoc ($result10);
+    $rows11 = mysqli_fetch_assoc ($result11);
+    $rows12 = mysqli_fetch_assoc ($result12);
+    $rows13 = mysqli_fetch_assoc ($result13);
+    $rows14 = mysqli_fetch_assoc ($result14);
+    $rows15 = mysqli_fetch_assoc ($result15);
+    $rows16 = mysqli_fetch_assoc ($result16);
     
         
 ?>
@@ -140,62 +164,134 @@
             </div>
     </section>
     <div class="container-grid">
-        <div id="grid2">
+        <div id="grid">
             <div class="slot1">
-                    <div class="img"><img src="http://localhost:8080/uploads/<?php echo $rows1['Image'];?>" alt=""></div>
-                    <div class="product"><?php echo $rows1['Product'];?></div>
-                    <div class="description"><?php echo $rows1['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows1['Cost'];?></div>  
-                 <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" class="buy"  style="color:white;">BUY NOW</a></button> 
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows1['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows1['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows1['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
             <div class="slot2">
-                    <div class="img"><img src="http://localhost:8080/uploads/<?php echo $rows2['Image'];?>" alt=""></div>
-                    <div class="product"><?php echo $rows2['Product'];?></div>
-                    <div class="description"><?php echo $rows2['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows2['Cost'];?></div>  
-                <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" class="buy"  style="color:white;">BUY NOW</a></button> 
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows2['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows2['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows3['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
             <div class="slot3">
-                    <div class="img"><img src="http://localhost:8080/uploads/<?php echo $rows3['Image'];?>" alt=""></div>
-                    <div class="product"><?php echo $rows3['Product'];?></div>
-                    <div class="description"><?php echo $rows3['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows3['Cost'];?></div>  
-                   <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" class="buy"  style="color:white;">BUY NOW</a></button> 
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows3['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows3['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows3['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
             <div class="slot4">
-                    <div class="img"><img src="http://localhost:8080/uploads/<?php echo $rows4['Image'];?>" alt=""></div>
-                    <div class="product"><?php echo $rows4['Product'];?></div>
-                    <div class="description"><?php echo $rows4['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows4['Cost'];?></div>  
-              <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" class="buy"  style="color:white;">BUY NOW</a></button> 
+               <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows4['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows4['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows4['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a> 
             </div>
             <div class="slot5">
-                    <div class="img"><img src="http://localhost:8080/uploads/<?php echo $rows5['Image'];?>" alt=""></div>
-                    <div class="product"><?php echo $rows5['Product'];?></div>
-                    <div class="description"><?php echo $rows5['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows5['Cost'];?></div>  
-                  <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" class="buy"  style="color:white;">BUY NOW</a></button> 
+               <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows5['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows5['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows5['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a> 
             </div>
             <div class="slot6">
-                    <div class="img"><img src="http://localhost:8080/uploads/<?php echo $rows6['Image'];?>" alt=""></div>
-                    <div class="product"><?php echo $rows6['Product'];?></div>
-                    <div class="description"><?php echo $rows6['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows6['Cost'];?></div>  
-                   <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" class="buy"  style="color:white;">BUY NOW</a></button> 
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows6['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows6['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows6['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
             <div class="slot7">
-                    <div class="img"><img src="http://localhost:8080/uploads/<?php echo $rows7['Image'];?>" alt=""></div>
-                    <div class="product"><?php echo $rows7['Product'];?></div>
-                    <div class="description"><?php echo $rows7['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows7['Cost'];?></div>  
-               <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" class="buy"  style="color:white;">BUY NOW</a></button> 
+               <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows7['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows7['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows7['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a> 
             </div>
             <div class="slot8">
-                    <div class="img"><img src="http://localhost:8080/uploads/<?php echo $rows8['Image'];?>" alt=""></div>
-                    <div class="product"><?php echo $rows8['Product'];?></div>
-                    <div class="description"><?php echo $rows8['Description'];?></div>
-                    <div class="price">KSh <?php echo $rows8['Cost'];?></div>  
-                  <button style="background-color:rgb(63, 170, 104); border:none; border-radius:4px; margin-left:100px; margin-top:15px;"><a href="loginform.php" class="buy"  style="color:white;">BUY NOW</a></button> 
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows8['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows8['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows8['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
+            </div>
+            <div class="slot9">
+            <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows9['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows9['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows9['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
+            </div>
+            <div class="slot10">
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows10['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows10['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows10['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
+            </div>
+            <div class="slot11">
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows11['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows11['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows11['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
+            </div>
+            <div class="slot12">
+               <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows12['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows12['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows12['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a> 
+            </div>
+            <div class="slot13">
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows13['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows13['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows13['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
+            </div>
+            <div class="slot14">
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows14['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows14['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows14['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
+            </div>
+            <div class="slot15">
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows15['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows15['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows15['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
+            </div>
+            <div class="slot16">
+                <a href="../products1admin/slot1.php" style="color:black;">
+                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows16['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                    <div class="product" style="text-align:center;"><?php echo $rows16['Product'];?></div>                 
+                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows16['Cost']);?></div> 
+                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                </a>
             </div>
                         
         </div>
