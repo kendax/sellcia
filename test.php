@@ -79,7 +79,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
 </head>
-<body>
+<body class="body">
 <header>
 
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
