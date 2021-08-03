@@ -1,6 +1,6 @@
 body{
     font-family: 'Abel';
-}
+}    
 .nav1 li{
     display:inline-block;
 }
@@ -272,3 +272,6 @@ ul li .active{
 .toggle .line3{
 	transform: rotate(45deg) translate(-5px,-6px);
 }
+nav ul {
+      list-style-type:none;    
+     }
