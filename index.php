@@ -157,6 +157,40 @@
 
 </header>
     
+    <div class="searchbarcode">
+            <link rel="stylesheet" href="css/searchbar.css">
+            <link rel="stylesheet" href="https://img.icons8.com/pastel-glyph/64/000000/">
+            <div class="container">
+                        <form action="searchlog.php" method="POST">
+                          <input class="main" name="search" style="transform:translateX(-16px);"/>
+                          <button class="searchicon" name="submit"></button>
+                          <div class="microphone" style="transform:translateX(0px);">
+                              <div class="mic-stand"></div>
+                          </div>
+                        </form>
+                        <div class="icon-holder">
+                            <div class="icon" id="parking">
+                            <div class="tooltip">Electronics</div>
+                        </div>
+                        <div class="icon" id="">
+                            <div class="" id="parking1"></div>
+                            <div class="tooltip">Shoes</div>
+                        </div>
+                        <div class="icon" id="">
+                            <div class="pho" id="parking2"></div>
+                            <div class=""></div>
+                            <div class="tooltip">Phones and Tablets</div>
+                        </div>
+                        <div class="icon" id="">
+                            <div class="" id="parking3"></div>
+                            <div class="tooltip">Books</div>
+                        </div>
+                        <div class="icon" id="misc">
+                            <div class="dots"></div>
+                            <div class="tooltip">More</div>
+                        </div>
+                </div>
+        </div>
     </div>
     <link rel="stylesheet" href="css/vela.css">
     <h1 class="kariba" style="transform:translateY(-50px);">
@@ -176,6 +210,41 @@
   <link rel="stylesheet" href="css/vela.css">
   <script src="js/carouFredsel.js"></script>
   
+
+<div class="row">
+	<div class="col-sm-12">
+	  <div class="carousel box-carousel d-none d-sm-block">
+		  <div class="box">
+			<a href="https://www.digitalus.com/" ><i class="fas fa-mobile-alt"></i><br>Phones</a>
+		  </div>
+		  <div class="box">
+			<a href="https://www.solodev.com/product/host.stml" ><i class="fas fa-book"></i><br>Books</a>
+		  </div>
+		  <div class="box">
+			<a href="https://www.solodev.com/" ><i class="fas fa-shoe-prints"></i><br>Shoes</a>
+		  </div>
+		  <div class="box">
+			<a href="https://www.solodev.com/product/engage.stml" ><i class="fas fa-shipping-fast"></i><br>Delivery</a>
+		  </div>
+		  <div class="box">
+			<a href="https://www.solodev.com/product/engage.stml"><i class="fas fa-shopping-bag"></i><br>Deals</a>
+		  </div>
+		<div class="box">
+			<a href="https://www.digitalus.com/" ><i class="fab fa-apple"></i><br>iphones</a>
+		  </div>
+		  <div class="box">
+			<a href="https://www.solodev.com/product/host.stml" ><i class="fas fa-tablet-alt"></i></i><br>Tablets</a>
+		  </div>
+		  <div class="box">
+			<a href="https://www.solodev.com/" ><i class="fab fa-cc-visa"></i><br>accepted</a>
+		  </div>
+		 <div class="box">
+			<a href="https://www.solodev.com/product/engage.stml" ><i class="fas fa-blender"></i><br>Electronics</a>
+		  </div>
+		  
+		</div><!-- carousel-->
+	</div><!--col-->
+  </div><!--row-->
 
 
 	
