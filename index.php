@@ -156,40 +156,7 @@
     </div>
 
 </header>
-    <div class="searchbarcode">
-            <link rel="stylesheet" href="css/searchbar.css">
-            <link rel="stylesheet" href="https://img.icons8.com/pastel-glyph/64/000000/">
-            <div class="container">
-                        <form action="searchlog.php" method="POST">
-                          <input class="main" name="search" style="transform:translateX(-16px);"/>
-                          <button class="searchicon" name="submit"></button>
-                          <div class="microphone" style="transform:translateX(0px);">
-                              <div class="mic-stand"></div>
-                          </div>
-                        </form>
-                        <div class="icon-holder">
-                            <div class="icon" id="parking">
-                            <div class="tooltip">Electronics</div>
-                        </div>
-                        <div class="icon" id="">
-                            <div class="" id="parking1"></div>
-                            <div class="tooltip">Shoes</div>
-                        </div>
-                        <div class="icon" id="">
-                            <div class="pho" id="parking2"></div>
-                            <div class=""></div>
-                            <div class="tooltip">Phones and Tablets</div>
-                        </div>
-                        <div class="icon" id="">
-                            <div class="" id="parking3"></div>
-                            <div class="tooltip">Books</div>
-                        </div>
-                        <div class="icon" id="misc">
-                            <div class="dots"></div>
-                            <div class="tooltip">More</div>
-                        </div>
-                </div>
-        </div>
+    
     </div>
     <link rel="stylesheet" href="css/vela.css">
     <h1 class="kariba" style="transform:translateY(-50px);">
