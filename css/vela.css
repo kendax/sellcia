@@ -1,5 +1,6 @@
 body{
     font-family: 'Abel';
+    width:380px;
 }
 .nav1 li{
     display:inline-block;
