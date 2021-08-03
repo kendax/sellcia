@@ -224,7 +224,7 @@ ul li .active{
                 max-height:2500px;
 	}
         h2{
-           ;
+            display:none;
         }
 	.men{
 		position:absolute;
