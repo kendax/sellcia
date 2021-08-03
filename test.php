@@ -98,8 +98,8 @@
          <link rel="stylesheet" href="https://img.icons8.com/pastel-glyph/64/000000/">
          <link rel="stylesheet" href="vela.css">
          
-            <li><a href="index.php" class="active"><i class="material-icons-round">
-home
+            <li><a href="index.php" class="active"><i class="material-icons">
+cloud
 </i>Home</a></li>
             <li><a href="electronics.php">Electronics</a></li>
             <li><a href="shoes.php">Shoes</a></li>
