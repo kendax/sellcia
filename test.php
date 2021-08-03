@@ -99,7 +99,7 @@
          <link rel="stylesheet" href="vela.css">
          
             <li><a href="index.php" class="active"><i class="material-icons">
-cloud
+home
 </i>Home</a></li>
             <li><a href="electronics.php">Electronics</a></li>
             <li><a href="shoes.php">Shoes</a></li>
