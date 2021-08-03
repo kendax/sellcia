@@ -96,14 +96,7 @@
          <link rel="stylesheet" href="css/searchbar.css">
          <link rel="stylesheet" href="https://img.icons8.com/pastel-glyph/64/000000/">
          <link rel="stylesheet" href="vela.css">
-         <li><div class="search-mobile" style="margin-left:0px;"><form action="searchlog.php" method="POST">
-                    <input class="main" name="search" />
-                    <link rel="stylesheet" href="css/searchbar.css">
-                    <button class="searchicon1" name="submit" style="height:-10px;"></button>
-                    <div class="microphone" style="transform:translateX(0px);">
-                        <div class="mic-stand"></div>
-                    </div>
-                  </form></div></li>
+         
             <li><a href="index.php" class="active">Home</a></li>
             <li><a href="electronics.php">Electronics</a></li>
             <li><a href="shoes.php">Shoes</a></li>
@@ -114,9 +107,7 @@
             <li><div class="login1" style="margin-top:-30px;">
             <button type="button" style="font-size:18px; margin-left:15px;" class="buttonlogin1"><a  href="loginform.php">Login</a></button>
             <button type="button" style="font-size:18px; margin-left:15px;" class="buttonlogin1"><a href="joinform.php">Join</a></button>
-            <li class="accessories11" style="font-weight:bold; font-size:18px; margin-left:20px;"><a href="loginform.php">Cart</a></li>
-                 <a class="accessories11" style="font-weight:bold; font-size:18px; margin-left:-16px; color:white; margin-top:3px;" href="help/indexlog.php">Help</a>
-              </div></a>
+                </div></a>
 </li>
             </div></li>
 	</ul>
