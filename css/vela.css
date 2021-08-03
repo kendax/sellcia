@@ -283,10 +283,10 @@ nav ul {
 	}
         nav li div p {
                      font-size:20px;
-                     text-display:center;
+                     text-align:center;
         }
         nav button {
-                   margin-top: 100px;
+                   margin-top: 70px;
         }
         nav li {
                margin-top: 20px;
