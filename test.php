@@ -90,14 +90,35 @@
 		<div id="nav">
 <nav class="upper-nav">
 	<ul class="menu" id="menu">
-		<li><link rel="icon" href="logo.jpg"></li>
-		<li><a href="VELA.html" class="active1">Home</a></li>
-		<li><a href="AI&ROBOTICS.html">AI & Robotics</a></li>
-		<li><a href="AR.html">AR</a></li>
-		<li><a href="MEMs.html">MEMs</a></li>
-		<li><a href="3Dprinting.html">3D Printing</a></li>
-		<li><a href="Nanomaterials.html">Nanomaterials</a></li>
-		<li><a href="Programming.html">Programming</a></li>
+		<li><div class="user-mobile" style="margin-left:-80px;">
+         <p>Hi,Welcome</p>
+         </div></li>
+         <link rel="stylesheet" href="css/searchbar.css">
+         <link rel="stylesheet" href="https://img.icons8.com/pastel-glyph/64/000000/">
+         <link rel="stylesheet" href="vela.css">
+         <li><div class="search-mobile" style="margin-left:0px;"><form action="searchlog.php" method="POST">
+                    <input class="main" name="search" />
+                    <link rel="stylesheet" href="css/searchbar.css">
+                    <button class="searchicon1" name="submit" style="height:-10px;"></button>
+                    <div class="microphone" style="transform:translateX(0px);">
+                        <div class="mic-stand"></div>
+                    </div>
+                  </form></div></li>
+            <li><a href="index.php" class="active">Home</a></li>
+            <li><a href="electronics.php">Electronics</a></li>
+            <li><a href="shoes.php">Shoes</a></li>
+            <li><a href="phonesandtablets.php">Phones and Tablets</a></li>
+            <li><a href="books.php">Books</a></li>
+            <li><div class="prev-nav1">
+            <link rel="stylesheet" href="vela.css">
+            <li><div class="login1" style="margin-top:-30px;">
+            <button type="button" style="font-size:18px; margin-left:15px;" class="buttonlogin1"><a  href="loginform.php">Login</a></button>
+            <button type="button" style="font-size:18px; margin-left:15px;" class="buttonlogin1"><a href="joinform.php">Join</a></button>
+            <li class="accessories11" style="font-weight:bold; font-size:18px; margin-left:20px;"><a href="loginform.php">Cart</a></li>
+                 <a class="accessories11" style="font-weight:bold; font-size:18px; margin-left:-16px; color:white; margin-top:3px;" href="help/indexlog.php">Help</a>
+              </div></a>
+</li>
+            </div></li>
 	</ul>
 	<div class="burger">
 		<div class="line1"></div>
