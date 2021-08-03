@@ -110,7 +110,7 @@
       <img  style="max-height:150px;"src="images/sellcialogo.png" alt="">
     </div> 
     <nav class="nav2" style="font-weight:bold; font-size:15px;">
-        <ul class="menu" id="menu">  
+        <ul class="men" id="menu">  
          <li><div class="user-mobile" style="margin-left:-80px;">
          <p>Hi,Welcome</p>
          </div></li>
