@@ -280,12 +280,14 @@ nav ul {
 	nav li a{
 		color:black;
                 font-size:20px;
-                margin-top: 20px;
 	}
         nav li div p {
                      font-size:20px;
         }
         nav button {
                    margin-top: 250px;
+        }
+        nav li {
+               margin-top: 20px;
         }
 }
