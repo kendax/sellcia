@@ -249,6 +249,7 @@ ul li .active{
         .container-grid{
                         width:380px;
         }
+
 }
 .nav-active{
 	transform: translateX(0%);
@@ -275,3 +276,10 @@ ul li .active{
 nav ul {
       list-style-type:none;    
      }
+
+@media screen and (max-width:860px){
+	nav li a{
+		color:black;
+                font-size:10px;
+	}
+}
