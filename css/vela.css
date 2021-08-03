@@ -291,8 +291,8 @@ nav ul {
         nav li {
                margin-top: 20px;
         }
-        .burger div {
-                height:40px;
+        .container-grid {
+                margin-top:40px;
         }
 }
 
