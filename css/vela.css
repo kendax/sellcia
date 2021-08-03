@@ -237,7 +237,6 @@ ul li .active{
 		align-items:center;
 		width:85%;
 		transform: translateX(-400%);
-		transition: transform 0.5s ease-in;
 		
 	}
 	.menu li{
