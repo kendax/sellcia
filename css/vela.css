@@ -243,8 +243,7 @@ ul li .active{
 		opacity:0;
 	}
 	.burger{
-		display:block;
-                height:35px;
+		display:block;            
 	}
         .container-grid{
                         width:380px;
@@ -292,7 +291,9 @@ nav ul {
         nav li {
                margin-top: 20px;
         }
-        
+        .burger div {
+                height:40px;
+        }
 }
 
 header{
