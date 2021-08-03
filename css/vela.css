@@ -226,7 +226,7 @@ ul li .active{
 	.menu{
 		position:absolute;
 		right:0px;
-		height:690%;
+		height:100%;
 		top:0vh;
 		background-color:deepskyblue;
 		display:flex;
