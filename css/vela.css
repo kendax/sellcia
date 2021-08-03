@@ -224,9 +224,9 @@ ul li .active{
                 max-height:2500px;
 	}
         h2{
-           display:none;
+           ;
         }
-	.menu{
+	.men{
 		position:absolute;
 		right:0px;
 		height:100%;
