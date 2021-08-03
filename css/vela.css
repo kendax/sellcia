@@ -227,7 +227,7 @@ ul li .active{
             display:none;
         }
 	.menu{
-		position:absolute;
+		position:fixed;
 		left:0px;
 		height:100%;
 		top:0vh;
