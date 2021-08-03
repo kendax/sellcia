@@ -229,7 +229,7 @@ ul li .active{
 	.menu{
 		position:fixed;
 		left:0px;
-		height:100%;
+		height:150%;
 		top:0vh;
 		background-color:white;
 		display:flex;
