@@ -295,10 +295,10 @@ nav ul {
 
 header{
 	
-    height:55px;
+    height:35px;
 	width:100%;
 	position:fixed;
-	z-index:1;
+	z-index:0;
 }
 .secondary{
           background-color:white;
