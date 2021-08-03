@@ -1,6 +1,5 @@
 body{
     font-family: 'Abel';
-    width:380px;
 }
 .nav1 li{
     display:inline-block;
@@ -222,6 +221,7 @@ ul li .active{
 	body{
 		overflow-x:hidden;
                 width:380px;
+                height:2500px;
 	}
 	.menu{
 		position:absolute;
