@@ -100,7 +100,7 @@
          
             <li><a href="index.php" class="active"><i class="material-icons">
 home
-</i>Home</a></li>
+</i><span></span>Home</a></li>
             <li><a href="electronics.php">Electronics</a></li>
             <li><a href="shoes.php">Shoes</a></li>
             <li><a href="phonesandtablets.php">Phones and Tablets</a></li>
