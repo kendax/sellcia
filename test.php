@@ -65,6 +65,7 @@
     <link rel="shortcut icon" href="images/sellcialogo3.png" type="image/x-icon" style="min-height:500px;">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/vela.css">
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
