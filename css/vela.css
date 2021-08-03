@@ -220,7 +220,7 @@ ul li .active{
 @media screen and (max-width:860px){
 	body{
 		overflow-x:hidden;
-                width:300px;
+                width:380px;
 	}
 	.menu{
 		position:absolute;
@@ -242,6 +242,9 @@ ul li .active{
 	.burger{
 		display:block;
 	}
+        .container-grid{
+                        width:380px;
+        }
 }
 .nav-active{
 	transform: translateX(0%);
