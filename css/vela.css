@@ -223,6 +223,9 @@ ul li .active{
                 max-width:380px;
                 max-height:2500px;
 	}
+        h2{
+           top:30px;
+        }
 	.menu{
 		position:absolute;
 		right:0px;
