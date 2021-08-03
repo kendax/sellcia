@@ -97,7 +97,9 @@
          <link rel="stylesheet" href="https://img.icons8.com/pastel-glyph/64/000000/">
          <link rel="stylesheet" href="vela.css">
          
-            <li><a href="index.php" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="index.php" class="active"><span class="material-icons-round">
+home
+</span>Home</a></li>
             <li><a href="electronics.php">Electronics</a></li>
             <li><a href="shoes.php">Shoes</a></li>
             <li><a href="phonesandtablets.php">Phones and Tablets</a></li>
