@@ -63,6 +63,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <link rel="shortcut icon" href="images/sellcialogo3.png" type="image/x-icon" style="min-height:500px;">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
     <link rel="stylesheet" href="css/vela.css">
     <!-- Latest compiled and minified CSS -->
@@ -140,6 +141,12 @@
 </li>
             </div></li>
         </ul>
+     
+       <div class="burger">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
+	</div>
     </nav>
     <link rel="stylesheet" href="css/vela.css">
     <div class="burger" style="transform:translateY(-50px);">
