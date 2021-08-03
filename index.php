@@ -530,7 +530,7 @@ You can purchase all your mobile phones, tablets, computers,laptops, and more on
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
     <script src="js/slider.js"></script>
     <script src="js/fonts.js"></script>
-    <script src="js/carouFredsel.js"></script>
+    <script src="carouFredsel.js"></script>
     <script src="js/main.js"></script>
     <script src="js/man.js"></script>
 </body>
