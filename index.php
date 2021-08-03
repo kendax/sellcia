@@ -208,7 +208,7 @@
   </div>
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/vela.css">
-  <script src="js/carouFredsel.js"></script>
+  <script src="carouFredsel.js"></script>
   
 
 <div class="row">
