@@ -297,6 +297,12 @@ nav ul {
         .container-grid {
                 margin-top:27px;
         }
+        #grid {
+              display: grid;
+              grid-template-rows: repeat(2, 1fr);
+              grid-template-columns: repeat(2, 1fr);
+              grid-gap: 10px;
+        }
 }  
 
 header{
