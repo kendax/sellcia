@@ -98,12 +98,8 @@
          <link rel="stylesheet" href="https://img.icons8.com/pastel-glyph/64/000000/">
          <link rel="stylesheet" href="vela.css">
          
-            <li><a href="index.php" class="active"><i class="material-icons">
-home
-</i><span>      </span>Home</a></li>
-            <li><a href="electronics.php"><i class="material-icons">
-live_tv
-</i>><span>      </span>Electronics</a></li>
+            <li><a href="index.php" class="active"><img src="https://img.icons8.com/material-outlined/48/000000/home--v2.png" style="max-height:30px;"/>Home</a></li>
+            <li><a href="electronics.php"><img src="https://img.icons8.com/ios/50/000000/tv-on.png" style="max-height:30px;"/>Electronics</a></li>
             <li><a href="shoes.php"><img src="https://img.icons8.com/ios-filled/50/000000/sneakers.png" style="max-height:30px;"/>Shoes</a></li>
             <li><a href="phonesandtablets.php"><img src="https://img.icons8.com/dotty/80/000000/multiple-smartphones.png" style="max-height:30px;"/>Phones and Tablets</a></li>
             <li><a href="books.php"><img src="https://img.icons8.com/carbon-copy/100/000000/books.png" style="max-height:30px;"/>Books</a></li>
