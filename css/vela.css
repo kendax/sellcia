@@ -290,7 +290,7 @@ nav ul {
         }
         nav li {
                margin-top: 20px;
-               margin-left: -200px;
+               display: none;
         }
         .container-grid {
                 margin-top:27px;
