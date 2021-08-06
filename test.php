@@ -104,9 +104,9 @@ home
             <li><a href="electronics.php"><i class="material-icons">
 live_tv
 </i>><span>      </span>Electronics</a></li>
-            <li><a href="shoes.php"><img src="https://img.icons8.com/ios-filled/50/000000/sneakers.png"/>Shoes</a></li>
-            <li><a href="phonesandtablets.php">Phones and Tablets</a></li>
-            <li><a href="books.php">Books</a></li>
+            <li><a href="shoes.php"><img src="https://img.icons8.com/ios-filled/50/000000/sneakers.png" style="max-height:30px;"/>Shoes</a></li>
+            <li><a href="phonesandtablets.php"><img src="https://img.icons8.com/dotty/80/000000/multiple-smartphones.png" style="max-height:30px;"/>Phones and Tablets</a></li>
+            <li><a href="books.php"><img src="https://img.icons8.com/carbon-copy/100/000000/books.png" style="max-height:30px;"/>Books</a></li>
             <li><div class="prev-nav1">
             <link rel="stylesheet" href="vela.css">
             <li><div class="login1" style="margin-top:-30px;">
