@@ -282,7 +282,7 @@ nav ul {
                 font-size:20px;
 	}
         nav li a img {
-                     margin-top:-5px;
+                     transform:translateY(-19%);
         }
         nav li div p {
                      font-size:20px;
