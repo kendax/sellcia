@@ -294,6 +294,8 @@ nav ul {
         .container-grid {
                 margin-top:27px;
         }
+        .menu li {
+                 transform: translateX(-50%);
 }
 
 header{
