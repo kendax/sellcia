@@ -96,7 +96,7 @@
          </div></li>
          <link rel="stylesheet" href="css/searchbar.css">
          <link rel="stylesheet" href="https://img.icons8.com/pastel-glyph/64/000000/">
-         <link rel="stylesheet" href="vela.css">
+         <link rel="stylesheet" href="css/vela.css">
          
             <li><a href="index.php" class="active"><img src="https://img.icons8.com/material-outlined/48/000000/home--v2.png" style="max-height:30px; transform:translateY(-19%);"/><span>    </span>Home</a></li>
             <li><a href="electronics.php"><img src="https://img.icons8.com/ios/50/000000/tv-on.png" style="max-height:30px; transform:translateY(-19%);"/><span>    </span>Electronics</a></li>
