@@ -281,7 +281,7 @@ nav ul {
 		color:black;
                 font-size:20px;
 	}
-        nav ul li a img {
+        nav li a img {
                      transform:translateY(-19%);
                      margin-left: 5px;
                      display: none;
