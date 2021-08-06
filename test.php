@@ -79,14 +79,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
-<style>
-   @media screen and (max-width:860px){
-                 nav ul li a {
-                          transform:translateX(-500%);
-                 }             
-}
-
-</style>
 </head>
 <body class="body">
 <header>
