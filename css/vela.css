@@ -234,7 +234,7 @@ ul li .active{
 		background-color:white;
 		display:flex;
 		flex-direction:column;
-		align-items:left;
+		align-items:center;
 		width:85%;
 		transform: translateX(-400%);
 		
