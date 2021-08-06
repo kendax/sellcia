@@ -284,6 +284,7 @@ nav ul {
         nav ul li a img {
                      transform:translateY(-19%);
                      margin-left: 5px;
+                     display: none;
         }
         nav li div p {
                      font-size:20px;
