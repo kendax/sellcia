@@ -104,7 +104,7 @@ home
             <li><a href="electronics.php"><i class="material-icons">
 live_tv
 </i>><span>      </span>Electronics</a></li>
-            <li><a href="shoes.php"><div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>Shoes</a></li>
+            <li><a href="shoes.php"><img src="https://img.icons8.com/ios-filled/50/000000/sneakers.png"/>Shoes</a></li>
             <li><a href="phonesandtablets.php">Phones and Tablets</a></li>
             <li><a href="books.php">Books</a></li>
             <li><div class="prev-nav1">
