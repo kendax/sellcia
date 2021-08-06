@@ -234,7 +234,7 @@ ul li .active{
 		background-color:white;
 		display:flex;
 		flex-direction:column;
-		align-items:center;
+		align-items:left;
 		width:85%;
 		transform: translateX(-400%);
 		
@@ -290,7 +290,6 @@ nav ul {
         }
         nav li {
                margin-top: 20px;
-               display: none;
         }
         .container-grid {
                 margin-top:27px;
