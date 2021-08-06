@@ -93,7 +93,7 @@
 	<ul class="menu" id="menu">
 		<li><div class="user-mobile" style="margin-left:-80px;">
          <p>Hi,Welcome</p>
-         </div></li>
+         </div style="transform:translateX(-50%);"></li>
          <link rel="stylesheet" href="css/searchbar.css">
          <link rel="stylesheet" href="https://img.icons8.com/pastel-glyph/64/000000/">
          <link rel="stylesheet" href="css/vela.css">
