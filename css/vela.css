@@ -303,9 +303,6 @@ nav ul {
               grid-template-columns: repeat(2, 1fr);
               grid-gap: 10px;
         }
-        body {
-             display:none;
-        }
 }  
 
 header{
