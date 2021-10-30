@@ -65,7 +65,8 @@
     <link rel="shortcut icon" href="images/sellcialogo3.png" type="image/x-icon" style="min-height:500px;">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
-    <link rel="stylesheet" href="css/vela.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/vela.css">
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
@@ -79,149 +80,50 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
 </head>
-<body>
+<body class="body">
 <header>
 
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="stylesheet" href="vela.css">
+<link rel="stylesheet" href="/css/vela.css">
 <script src="js/main.js"></script>
 
-<div id="nav">
-<nav class="nav1">
-      <ul>
-     
-            <li><a><img src="images/sellcialogo.png" alt=""></a></li>
-                <li class="accessories" style="margin-left:1030px; font-weight:bold; font-size:15px;"><a>
-                    <div class="login">Login
-                        <div class="loginlinks">
-                                <button type="button" class="buttonlogin"><a  href="loginform.php">Login</a></button>
-                                <button type="button"><a href="joinform.php">Join</a></button>
-                        </div>
-                    </div>
-                </a></li>
-            <li class="accessories1" style="font-weight:bold; font-size:15px;"><a href="loginform.php">Cart</a></li>
-            <li class="accessories1" style="font-weight:bold; font-size:15px;"><a href="help/indexlog.php">Help</a></li>
-        </nav>
-      </ul>
-    </nav>
-    <link rel="stylesheet" href="vela.css">
-    <script src="js/main.js"></script>
-    <div class="img-mobile" style="margin-left:32%;">
-      <img  style="max-height:150px;"src="images/sellcialogo.png" alt="">
-    </div> 
-    <nav class="nav2" style="font-weight:bold; font-size:15px;">
-        <ul class="menu" id="menu">  
-         <li><div class="user-mobile" style="margin-left:-80px;">
+<div id="container">
+		<div id="nav">
+<nav class="upper-nav">
+	<ul class="menu" id="menu">
+		<li><div class="user-mobile" style="margin-left:-80px;">
          <p>Hi,Welcome</p>
          </div></li>
          <link rel="stylesheet" href="css/searchbar.css">
          <link rel="stylesheet" href="https://img.icons8.com/pastel-glyph/64/000000/">
-         <link rel="stylesheet" href="vela.css">
-         <li><div class="search-mobile" style="margin-left:0px;"><form action="searchlog.php" method="POST">
-                    <input class="main" name="search" />
-                    <link rel="stylesheet" href="css/searchbar.css">
-                    <button class="searchicon1" name="submit" style="height:-10px;"></button>
-                    <div class="microphone" style="transform:translateX(0px);">
-                        <div class="mic-stand"></div>
-                    </div>
-                  </form></div></li>
-            <li><a href="index.php" class="active">Home</a></li>
-            <li><a href="electronics.php">Electronics</a></li>
-            <li><a href="shoes.php">Shoes</a></li>
-            <li><a href="phonesandtablets.php">Phones and Tablets</a></li>
-            <li><a href="books.php">Books</a></li>
+         <link rel="stylesheet" href="css/vela.css">
+         
+            <li><a href="index.php" class="active"><img src="https://img.icons8.com/material-outlined/48/000000/home--v2.png" style="max-height:30px; transform:translateY(-19%);"/><span>    </span>Home</a></li>
+            <li><a href="electronics.php"><img src="https://img.icons8.com/ios/50/000000/tv-on.png" style="max-height:30px; transform:translateY(-19%);"/><span>    </span>Electronics</a></li>
+            <li><a href="shoes.php"><img src="https://img.icons8.com/ios/50/000000/sneakers.png" style="max-height:30px; transform:translateY(-19%);"/><span>    </span>Shoes</a></li>
+            <li><a href="phonesandtablets.php"><img src="https://img.icons8.com/dotty/80/000000/multiple-smartphones.png" style="max-height:30px; transform:translateY(-19%);"/><span>    </span>Phones and Tablets</a></li>
+            <li><a href="books.php"><img src="https://img.icons8.com/carbon-copy/100/000000/books.png" style="max-height:30px; transform:translateY(-19%);"/><span>    </span>Books</a></li>
             <li><div class="prev-nav1">
             <link rel="stylesheet" href="vela.css">
             <li><div class="login1" style="margin-top:-30px;">
             <button type="button" style="font-size:18px; margin-left:15px;" class="buttonlogin1"><a  href="loginform.php">Login</a></button>
             <button type="button" style="font-size:18px; margin-left:15px;" class="buttonlogin1"><a href="joinform.php">Join</a></button>
-            <li class="accessories11" style="font-weight:bold; font-size:18px; margin-left:20px;"><a href="loginform.php">Cart</a></li>
-                 <a class="accessories11" style="font-weight:bold; font-size:18px; margin-left:-16px; color:white; margin-top:3px;" href="help/indexlog.php">Help</a>
-              </div></a>
+                </div></a>
 </li>
             </div></li>
-        </ul>
-     
-       <div class="burger">
+	</ul>
+	<div class="burger">
 		<div class="line1"></div>
 		<div class="line2"></div>
 		<div class="line3"></div>
 	</div>
-    </nav>
-    <link rel="stylesheet" href="css/vela.css">
-    <div class="burger" style="transform:translateY(-50px);">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
 
-</header>
-    
-    <div class="searchbarcode">
-            <link rel="stylesheet" href="css/searchbar.css">
-            <link rel="stylesheet" href="https://img.icons8.com/pastel-glyph/64/000000/">
-            <div class="container">
-                        <form action="searchlog.php" method="POST">
-                          <input class="main" name="search" style="transform:translateX(-16px);"/>
-                          <button class="searchicon" name="submit"></button>
-                          <div class="microphone" style="transform:translateX(0px);">
-                              <div class="mic-stand"></div>
-                          </div>
-                        </form>
-                        <div class="icon-holder">
-                            <div class="icon" id="parking">
-                            <div class="tooltip">Electronics</div>
-                        </div>
-                        <div class="icon" id="">
-                            <div class="" id="parking1"></div>
-                            <div class="tooltip">Shoes</div>
-                        </div>
-                        <div class="icon" id="">
-                            <div class="pho" id="parking2"></div>
-                            <div class=""></div>
-                            <div class="tooltip">Phones and Tablets</div>
-                        </div>
-                        <div class="icon" id="">
-                            <div class="" id="parking3"></div>
-                            <div class="tooltip">Books</div>
-                        </div>
-                        <div class="icon" id="misc">
-                            <div class="dots"></div>
-                            <div class="tooltip">More</div>
-                        </div>
-                </div>
-        </div>
-    </div>
-    <link rel="stylesheet" href="css/vela.css">
-    <h1 class="kariba" style="transform:translateY(-50px);">
-  <a href="" class="typewrite" style="font-size:24px;" data-period="2000" data-type='[ "Hi, Welcome To Sellcia.", "We Have All You Need.", "Good Quality.","Fair Prices!", "And We Deliver Everytime." ]'>
-    <span class="wrap"></span>
-  </a>
-</h1>
-    <div class="body1" style="margin-top:-200px;">
-    
-    <div class="container" style="background-color:black;">
-  <div class="row">
-	  <div class="col-sm-12">
-		 <h2 class="h2 font-weight-bold text-uppercase text-center my-5"><span style="color:white">Our</span> <span style="color:green">Deals</span></h2>
-	  </div>
-  </div>
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/vela.css">
-  <script src="carouFredsel.js"></script>
-  
-
-
-
-
-	
- 
-	  </div><!-- col-->
-	</div>
-  </div>
-</div><!-- container-->
+</nav>
 </div>
-    <div class="container-grid">
+</header>
+
+
+   <div class="container-grid">
         <link rel="stylesheet" href="css/vela.css">
         <div id="grid">
             <div class="slot1">
