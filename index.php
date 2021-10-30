@@ -402,5 +402,6 @@ You can purchase all your mobile phones, tablets, computers,laptops, and more on
     <script src="carouFredsel.js"></script>
     <script src="js/main.js"></script>
     <script src="js/man.js"></script>
+    <script src="https://kit.fontawesome.com/d8eb151765.js" crossorigin="anonymous"></script>
 </body>
 </html>

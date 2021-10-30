@@ -1,23 +1,22 @@
 <?php
     include_once('connection.php');
 
-     $stmt1 = "SELECT * FROM electronics  where ProductID ='1' ORDER BY ProductID ASC;";
-     $stmt2 = "SELECT * FROM electronics  where ProductID ='2' ORDER BY ProductID ASC;";
-     $stmt3 = "SELECT * FROM electronics  where ProductID ='3' ORDER BY ProductID ASC;";
-     $stmt4 = "SELECT * FROM electronics  where ProductID ='4' ORDER BY ProductID ASC;";
-     $stmt5 = "SELECT * FROM electronics  where ProductID ='5' ORDER BY ProductID ASC;";
-     $stmt6 = "SELECT * FROM electronics  where ProductID ='6' ORDER BY ProductID ASC;";
-     $stmt7 = "SELECT * FROM electronics  where ProductID ='7' ORDER BY ProductID ASC;";
-     $stmt8 = "SELECT * FROM electronics  where ProductID ='8' ORDER BY ProductID ASC;";
-     $stmt9 = "SELECT * FROM electronics  where ProductID ='9' ORDER BY ProductID ASC;";
-     $stmt10 = "SELECT * FROM electronics  where ProductID ='10' ORDER BY ProductID ASC;";
-     $stmt11 = "SELECT * FROM electronics  where ProductID ='11' ORDER BY ProductID ASC;";
-     $stmt12 = "SELECT * FROM electronics  where ProductID ='12' ORDER BY ProductID ASC;";
-     $stmt13 = "SELECT * FROM electronics  where ProductID ='13' ORDER BY ProductID ASC;";
-     $stmt14 = "SELECT * FROM electronics  where ProductID ='14' ORDER BY ProductID ASC;";
-     $stmt15 = "SELECT * FROM electronics  where ProductID ='15' ORDER BY ProductID ASC;";
-     $stmt16 = "SELECT * FROM electronics  where ProductID ='16' ORDER BY ProductID ASC;";
-
+    $stmt1 = "SELECT * FROM electronics  where ProductID ='1' ORDER BY ProductID ASC;";
+    $stmt2 = "SELECT * FROM electronics  where ProductID ='2' ORDER BY ProductID ASC;";
+    $stmt3 = "SELECT * FROM electronics  where ProductID ='3' ORDER BY ProductID ASC;";
+    $stmt4 = "SELECT * FROM electronics  where ProductID ='4' ORDER BY ProductID ASC;";
+    $stmt5 = "SELECT * FROM shoes  where ProductID ='1' ORDER BY ProductID ASC;";
+    $stmt6 = "SELECT * FROM shoes  where ProductID ='2' ORDER BY ProductID ASC;";
+    $stmt7 = "SELECT * FROM shoes  where ProductID ='3' ORDER BY ProductID ASC;";
+    $stmt8 = "SELECT * FROM shoes  where ProductID ='4' ORDER BY ProductID ASC;";
+    $stmt9 = "SELECT * FROM phonesandtablets  where ProductID ='1' ORDER BY ProductID ASC;";
+    $stmt10 = "SELECT * FROM phonesandtablets  where ProductID ='2' ORDER BY ProductID ASC;";
+    $stmt11 = "SELECT * FROM phonesandtablets  where ProductID ='3' ORDER BY ProductID ASC;";
+    $stmt12 = "SELECT * FROM phonesandtablets  where ProductID ='4' ORDER BY ProductID ASC;";
+    $stmt13 = "SELECT * FROM books  where ProductID ='1' ORDER BY ProductID ASC;";
+    $stmt14 = "SELECT * FROM books  where ProductID ='2' ORDER BY ProductID ASC;";
+    $stmt15 = "SELECT * FROM books  where ProductID ='3' ORDER BY ProductID ASC;";
+    $stmt16 = "SELECT * FROM books  where ProductID ='4' ORDER BY ProductID ASC;";
 
     $result1 = mysqli_query($conn, $stmt1);
     $result2 = mysqli_query($conn, $stmt2);
@@ -35,7 +34,7 @@
     $result14 = mysqli_query($conn, $stmt14);
     $result15 = mysqli_query($conn, $stmt15);
     $result16 = mysqli_query($conn, $stmt16);
-
+    
 
     $rows1 = mysqli_fetch_assoc ($result1);
     $rows2 = mysqli_fetch_assoc ($result2);
@@ -53,7 +52,7 @@
     $rows14 = mysqli_fetch_assoc ($result14);
     $rows15 = mysqli_fetch_assoc ($result15);
     $rows16 = mysqli_fetch_assoc ($result16);
-   
+    
         
 ?>
 <!DOCTYPE html>
@@ -62,10 +61,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Electronics</title>
-    <link rel="shortcut icon" href="images/velatitle.png" type="image/x-icon">
+    <title>Home</title>
+    <link rel="shortcut icon" href="images/sellcialogo3.png" type="image/x-icon" style="min-height:500px;">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
-    <link rel="stylesheet" href="css/vela.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/vela.css">
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
@@ -76,94 +77,54 @@
 	<!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
 </head>
-<body>
-    <header>
-        <nav class="nav1">
-            <li><a><img src="images/sellcialogo.png" alt=""></a></li>
-                <li class="accessories"><a>
-                    <div class="login">Login
-                        <div class="loginlinks">
-                                <button type="button" class="buttonlogin"><a  href="loginform.php" >Login</a></button>
-                                <button type="button"><a href="joinform.php">Join</a></button>
-                        </div>
-                    </div>
-                </a></li>
-            <li class="accessories1"><a>Cart</a></li>
-            <li class="accessories1"><a>Help</a></li>
-        </nav>
-        <nav class="nav2">
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="electronics.php" class="active">Electronics</a></li>
-                <li><a href="shoes.php">Shoes</a></li>
-                <li><a href="phonesandtablets.php">Phones and Tablets</a></li>
-                <li><a href="books.php">Books</a></li>               
-            </ul>
-        </nav>
-    </header>
-    <div class="searchbarcode">
-            <link rel="stylesheet" href="css/searchbar.css">
-            <link rel="stylesheet" href="https://img.icons8.com/pastel-glyph/64/000000/">
-                <div class="container">
-                    <input class="main"/><span class="searchicon"></span>
-                        <div class="microphone">
-                             <div class="mic-stand"></div>
-                        </div>
-                        <div class="icon-holder">
-                            <div class="icon" id="parking">
-                            <div class="tooltip">Electronics</div>
-                        </div>
-                        <div class="icon" id="">
-                            <div class="" id="parking1"></div>
-                            <div class="tooltip">Shoes</div>
-                        </div>
-                        <div class="icon" id="">
-                            <div class="pho" id="parking2"></div>
-                            <div class=""></div>
-                            <div class="tooltip">Phones and Tablets</div>
-                        </div>
-                        <div class="icon" id="">
-                            <div class="" id="parking3"></div>
-                            <div class="tooltip">Books</div>
-                        </div>
-                        <div class="icon" id="misc">
-                            <div class="dots"></div>
-                            <div class="tooltip">More</div>
-                        </div>
-                </div>
-        </div>
-    </div>
-    <section class="slider">
-            <link rel="stylesheet" href="css/slider.css">
-            <script src="js/slider.js"></script>
-            <div class="container">
-                <div class="carousel slide carousel-swipe" id="carousel" data-ride="carousel" data-interval="3000">
-                    <ol class="carousel-indicators">
-                    <li class="active" data-target="#carousel" data-slide-to="0"></li>
-                    <li data-target="#carousel" data-slide-to="1"></li>
-                    <li data-target="#carousel" data-slide-to="2"></li>
-                    <li data-target="#carousel" data-slide-to="3"></li>
-                    <li data-target="#carousel" data-slide-to="4"></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                    <div class="item active"><img src="images/christian.jpg"/>
-                        <div class="carousel-caption">VELA</div>
-                    </div>
-                    <div class="item"><img src="images/radek.jpg"/>
-                        <div class="carousel-caption">VELA</div>
-                    </div>
-                    <div class="item"><img src="images/dmitry.jpg"/>
-                        <div class="carousel-caption">VELA</div>
-                    </div>
-                    <div class="item"><img src="images/aaron.jpg"/>
-                        <div class="carousel-caption">VELA</div>
-                    </div>
-                    </div><a class="left carousel-control" href="#carousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Prev</span></a><a class="right carousel-control" href="#carousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">next</span></a>
-                </div>
-            </div>
-    </section>
-    <div class="container-grid">
+<body class="body">
+<header>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="/css/vela.css">
+<script src="js/main.js"></script>
+
+<div id="container">
+		<div id="nav">
+<nav class="upper-nav">
+	<ul class="menu" id="menu">
+		<li><div class="user-mobile" style="margin-left:-80px;">
+         <p>Hi,Welcome</p>
+         </div></li>
+         <link rel="stylesheet" href="css/searchbar.css">
+         <link rel="stylesheet" href="https://img.icons8.com/pastel-glyph/64/000000/">
+         <link rel="stylesheet" href="css/vela.css">
+         
+            <li><a href="index.php" class="active"><img src="https://img.icons8.com/material-outlined/48/000000/home--v2.png" style="max-height:30px; transform:translateY(-19%);"/><span>    </span>Home</a></li>
+            <li><a href="electronics.php"><img src="https://img.icons8.com/ios/50/000000/tv-on.png" style="max-height:30px; transform:translateY(-19%);"/><span>    </span>Electronics</a></li>
+            <li><a href="shoes.php"><img src="https://img.icons8.com/ios/50/000000/sneakers.png" style="max-height:30px; transform:translateY(-19%);"/><span>    </span>Shoes</a></li>
+            <li><a href="phonesandtablets.php"><img src="https://img.icons8.com/dotty/80/000000/multiple-smartphones.png" style="max-height:30px; transform:translateY(-19%);"/><span>    </span>Phones and Tablets</a></li>
+            <li><a href="books.php"><img src="https://img.icons8.com/carbon-copy/100/000000/books.png" style="max-height:30px; transform:translateY(-19%);"/><span>    </span>Books</a></li>
+            <li><div class="prev-nav1">
+            <link rel="stylesheet" href="vela.css">
+            <li><div class="login1" style="margin-top:-30px;">
+            <button type="button" style="font-size:18px; margin-left:15px;" class="buttonlogin1"><a  href="loginform.php">Login</a></button>
+            <button type="button" style="font-size:18px; margin-left:15px;" class="buttonlogin1"><a href="joinform.php">Join</a></button>
+                </div></a>
+</li>
+            </div></li>
+	</ul>
+	<div class="burger">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
+	</div>
+
+</nav>
+</div>
+</header>
+
+
+   <div class="container-grid">
+        <link rel="stylesheet" href="css/vela.css">
         <div id="grid">
             <div class="slot1">
                 <a href="../products1admin/slot1.php" style="color:black;">
@@ -296,6 +257,8 @@
                         
         </div>
     </div>
+
+
     <section class="footer">
         <footer>
         <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> 
@@ -416,5 +379,17 @@
 		</section>
         </footer>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+    <script src="js/slider.js"></script>
+    <script src="js/fonts.js"></script>
+    <script src="carouFredsel.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/man.js"></script>
+    <script src="https://kit.fontawesome.com/d8eb151765.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
