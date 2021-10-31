@@ -62,316 +62,211 @@
     $rows16 = mysqli_fetch_assoc ($result16);
     
         
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-    <link rel="shortcut icon" href="../images/sellcialogo3.png" type="image/x-icon" style="min-height:500px;">
-    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
-    <link rel="stylesheet" href="../css/vela.css">
-    <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-	<!-- jQuery library -->
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    ?>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Home</title>
+        <link rel="shortcut icon" href="images/sellcialogo3.png" type="image/x-icon" style="min-height:500px;">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+        <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="/css/vela.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
-<link rel="stylesheet" href="../css/fonts.css">
-</head>
-<body>
+        <!-- jQuery library -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+    </head>
+    <body class="body">
     <header>
-     <link rel="stylesheet" href="../css/vela.css">
-        <nav class="nav1">
-            <li><a><img src="../images/sellcialogo.png" alt=""></a></li>
-            <li class="accessories"><a>
-                     <div class="user" >
-                         <p style="transform:translateY(-50px); font-weight:bold; font-size:15px;">Hi <?php echo htmlspecialchars($_SESSION["username"]); ?></p>
-                    </div>
-                    <div class="login">
-                        <button type="button" class="buttonlogin" style="transform:translateX(80px);"><a  href="logout.php" style="color:white;">Logout</a></button>
-                    </div>
-            </a></li>
-            <li class="accessories1" style="transform:translateX(50px); margin-left:0px;"><a><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-<input type="submit" value="Cart" style="color:white; width:45px; background-color:rgb(63, 170, 104); border:none; transform:translateX(-7px);" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-
-</a></li>
-            <li class="accessories1" style="font-weight:bold; font-size:15px;"><a>Help</a></li>
-        </nav>
-        <nav class="nav2" style="font-weight:bold; font-size:15px;">
-            <ul>
-                <li><a href="indexprofile.php" class="active">Home</a></li>
-                <li><a href="electronicsprofile.php">Electronics</a></li>
-                <li><a href="shoesprofile.php">Shoes</a></li>
-                <li><a href="phonesandtabletsprofile.php">Phones and Tablets</a></li>
-                <li><a href="booksprofile.php">Books</a></li>             
-            </ul>
-        </nav>
-    </header>
-    <div class="searchbarcode">
-            <link rel="stylesheet" href="../css/searchbar.css">
-            <link rel="stylesheet" href="https://img.icons8.com/pastel-glyph/64/000000/">
-                <div class="container">
-                    <input class="main"/><span class="searchicon"></span>
-                        <div class="microphone">
-                             <div class="mic-stand"></div>
-                        </div>
-                        <div class="icon-holder">
-                            <div class="icon" id="parking">
-                            <div class="tooltip">Electronics</div>
-                        </div>
-                        <div class="icon" id="">
-                            <div class="" id="parking1"></div>
-                            <div class="tooltip">Shoes</div>
-                        </div>
-                        <div class="icon" id="">
-                            <div class="pho" id="parking2"></div>
-                            <div class=""></div>
-                            <div class="tooltip">Phones and Tablets</div>
-                        </div>
-                        <div class="icon" id="">
-                            <div class="" id="parking3"></div>
-                            <div class="tooltip">Books</div>
-                        </div>
-                        <div class="icon" id="misc">
-                            <div class="dots"></div>
-                            <div class="tooltip">More</div>
-                        </div>
-                </div>
-        </div>
-    </div>
-    <link rel="stylesheet" href="../css/vela.css">
-    <h1 class="kariba" style="transform:translateY(-50px);">
-  <a href="" class="typewrite" data-period="2000" data-type='[ "Hi <?php echo htmlspecialchars($_SESSION["username"]); ?>, Welcome To Sellcia.", "We Have All You Need.", "Good Quality.","Fair Prices!", "And We Deliver Everytime." ]'>
-    <span class="wrap"></span>
-  </a>
-</h1>
-    <div class="body1" style="margin-top:-200px;">
     
-    <div class="container" style="background-color:black;">
-  <div class="row">
-	  <div class="col-sm-12">
-		 <h2 class="h2 font-weight-bold text-uppercase text-center my-5"><span style="color:white">Our</span> <span style="color:green">Deals</span></h2>
-	  </div>
-  </div>
-  <div class="row">
-	<div class="col-sm-12">
-	  <div class="carousel box-carousel d-none d-sm-block">
-		  <div class="box">
-			<a href="https://www.digitalus.com/" ><i class="fas fa-mobile-alt"></i><br>Phones</a>
-		  </div>
-		  <div class="box">
-			<a href="https://www.solodev.com/product/host.stml" ><i class="fas fa-book"></i><br>Books</a>
-		  </div>
-		  <div class="box">
-			<a href="https://www.solodev.com/" ><i class="fas fa-shoe-prints"></i><br>Shoes</a>
-		  </div>
-		  <div class="box">
-			<a href="https://www.solodev.com/product/engage.stml" ><i class="fas fa-shipping-fast"></i><br>Delivery</a>
-		  </div>
-		  <div class="box">
-			<a href="https://www.solodev.com/product/engage.stml"><i class="fas fa-shopping-bag"></i><br>Deals</a>
-		  </div>
-		<div class="box">
-			<a href="https://www.digitalus.com/" ><i class="fab fa-apple"></i><br>iphones</a>
-		  </div>
-		  <div class="box">
-			<a href="https://www.solodev.com/product/host.stml" ><i class="fas fa-tablet-alt"></i></i><br>Tablets</a>
-		  </div>
-		  <div class="box">
-			<a href="https://www.solodev.com/" ><i class="fab fa-cc-visa"></i><br>accepted</a>
-		  </div>
-		  <div class="box">
-			<a href="https://www.solodev.com/product/engage.stml" ><i class="fas fa-blender"></i><br>Electronics</a>
-		  </div>
-		  
-		</div><!-- carousel-->
-	</div><!--col-->
-  </div><!--row-->
-
-
-
-
-	
-  <div class="carousel-mobile box-carousel-mobile d-block d-sm-none">
-	<div class="row d-flex justify-content-center">
-	  <div class="col-xs-6">
-		<div class="box">
-		  <a href="https://www.digitalus.com/" ><i class="fa fa-3x fa-laptop" aria-hidden="true"></i><br>Web Design</a>
-		</div>
-		<div class="box">
-		  <a href="https://www.solodev.com/product/host.stml" ><i class="fa fa-3x fa-cloud" aria-hidden="true"></i><br>Cloud Hosting</a>
-		</div>
-		<div class="box">
-		  <a href="https://www.solodev.com/" ><i class="fa fa-3x fa-users" aria-hidden="true"></i><br>WXP</a>
-		</div>
-	  </div><!-- col-->
-	  <div class="col-xs-6">
-		<div class="box">
-		  <a href="https://www.digitalus.com/" ><i class="fa fa-3x fa-laptop" aria-hidden="true"></i><br>Web Design</a>
-		</div>
-		<div class="box">
-		  <a href="https://www.solodev.com/product/host.stml" ><i class="fa fa-3x fa-cloud" aria-hidden="true"></i><br>Cloud Hosting</a>
-		</div>
-		<div class="box">
-		  <a href="https://www.solodev.com/" class="more-links">More Quick Links</a>
-		</div>
-	  </div><!-- col-->
-	</div>
-  </div>
-</div><!-- container-->
-</div>
-
-    <div class="container-grid">
-        <link rel="stylesheet" href="../css/vela.css">
-        <div id="grid">
-            <div class="slot1">
-                <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows1['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
-                    <div class="product" style="text-align:center;"><?php echo $rows1['Product'];?></div>                 
-                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows1['Cost']);?></div> 
-                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
-                </a>
-            </div>
-            <div class="slot2">
-                <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows2['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
-                    <div class="product" style="text-align:center;"><?php echo $rows2['Product'];?></div>                 
-                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows2['Cost']);?></div> 
-                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
-                </a>
-            </div>
-            <div class="slot3">
-                <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows3['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
-                    <div class="product" style="text-align:center;"><?php echo $rows3['Product'];?></div>                 
-                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows3['Cost']);?></div> 
-                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
-                </a>
-            </div>
-            <div class="slot4">
-                <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows4['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
-                    <div class="product" style="text-align:center;"><?php echo $rows4['Product'];?></div>                 
-                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows4['Cost']);?></div> 
-                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
-                </a>
-            </div>
-            <div class="slot5">
-                <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows5['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
-                    <div class="product" style="text-align:center;"><?php echo $rows5['Product'];?></div>                 
-                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows5['Cost']);?></div> 
-                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
-                </a>
-            </div>
-            <div class="slot6">
-                <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows6['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
-                    <div class="product" style="text-align:center;"><?php echo $rows6['Product'];?></div>                 
-                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows6['Cost']);?></div> 
-                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
-                </a>
-            </div>
-            <div class="slot7">
-                <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows7['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
-                    <div class="product" style="text-align:center;"><?php echo $rows7['Product'];?></div>                 
-                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows7['Cost']);?></div> 
-                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
-                </a>
-            </div>
-            <div class="slot8">
-                <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows8['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
-                    <div class="product" style="text-align:center;"><?php echo $rows8['Product'];?></div>                 
-                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows8['Cost']);?></div> 
-                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
-                </a>
-            </div>
-            <div class="slot9">
-                <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows9['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
-                    <div class="product" style="text-align:center;"><?php echo $rows9['Product'];?></div>                 
-                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows9['Cost']);?></div> 
-                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
-                </a>
-            </div>
-            <div class="slot10">
-                <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows10['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
-                    <div class="product" style="text-align:center;"><?php echo $rows10['Product'];?></div>                 
-                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows10['Cost']);?></div> 
-                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
-                </a>
-            </div>
-            <div class="slot11">
-                <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows11['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
-                    <div class="product" style="text-align:center;"><?php echo $rows11['Product'];?></div>                 
-                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows11['Cost']);?></div> 
-                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
-                </a>
-            </div>
-            <div class="slot12">
-                <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows12['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
-                    <div class="product" style="text-align:center;"><?php echo $rows12['Product'];?></div>                 
-                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows12['Cost']);?></div> 
-                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
-                </a>
-            </div>
-            <div class="slot13">
-                <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows13['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
-                    <div class="product" style="text-align:center;"><?php echo $rows13['Product'];?></div>                 
-                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows13['Cost']);?></div> 
-                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
-                </a>
-            </div>
-            <div class="slot14">
-                <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows14['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
-                    <div class="product" style="text-align:center;"><?php echo $rows14['Product'];?></div>                 
-                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows14['Cost']);?></div> 
-                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
-                </a>
-            </div>
-            <div class="slot15">
-                <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows15['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
-                    <div class="product" style="text-align:center;"><?php echo $rows15['Product'];?></div>                 
-                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows15['Cost']);?></div> 
-                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
-                </a>
-            </div>
-            <div class="slot16">
-                <a href="../products1admin/slot1.php" style="color:black;">
-                    <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows16['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
-                    <div class="product" style="text-align:center;"><?php echo $rows16['Product'];?></div>                 
-                    <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows16['Cost']);?></div> 
-                    <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
-                </a>
-            </div>
-                        
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="/css/vela.css">
+    <script src="js/main.js"></script>
+    
+    <div id="container">
+            <div id="nav">
+    <nav class="upper-nav">
+        <ul class="menu" id="menu">
+            <li><div class="user-mobile" style="margin-left:-80px;">
+             <p>Hi,Welcome</p>
+             </div></li>
+             <link rel="stylesheet" href="css/searchbar.css">
+             <link rel="stylesheet" href="https://img.icons8.com/pastel-glyph/64/000000/">
+             <link rel="stylesheet" href="css/vela.css">
+             
+                <li><a href="index.php" class="active"><img src="https://img.icons8.com/material-outlined/48/000000/home--v2.png" style="max-height:30px; transform:translateY(-19%);"/><span>    </span>Home</a></li>
+                <li><a href="electronics.php"><img src="https://img.icons8.com/ios/50/000000/tv-on.png" style="max-height:30px; transform:translateY(-19%);"/><span>    </span>Electronics</a></li>
+                <li><a href="shoes.php"><img src="https://img.icons8.com/ios/50/000000/sneakers.png" style="max-height:30px; transform:translateY(-19%);"/><span>    </span>Shoes</a></li>
+                <li><a href="phonesandtablets.php"><img src="https://img.icons8.com/dotty/80/000000/multiple-smartphones.png" style="max-height:30px; transform:translateY(-19%);"/><span>    </span>Phones and Tablets</a></li>
+                <li><a href="books.php"><img src="https://img.icons8.com/carbon-copy/100/000000/books.png" style="max-height:30px; transform:translateY(-19%);"/><span>    </span>Books</a></li>
+                <li><div class="prev-nav1">
+                <link rel="stylesheet" href="vela.css">
+                <li><div class="login1" style="margin-top:-30px;">
+                <button type="button" style="font-size:18px; margin-left:15px;" class="buttonlogin1"><a  href="loginform.php">Login</a></button>
+                <button type="button" style="font-size:18px; margin-left:15px;" class="buttonlogin1"><a href="joinform.php">Join</a></button>
+                    </div></a>
+    </li>
+                </div></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
+    
+    </nav>
     </div>
-    <br><br>
+    </header>
+    
+    
+       <div class="container-grid">
+            <link rel="stylesheet" href="css/vela.css">
+            <div id="grid">
+                <div class="slot1">
+                    <a href="../products1admin/slot1.php" style="color:black;">
+                        <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows1['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                        <div class="product" style="text-align:center;"><?php echo $rows1['Product'];?></div>                 
+                        <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows1['Cost']);?></div> 
+                        <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                    </a>
+                </div>
+                <div class="slot2">
+                    <a href="../products1admin/slot1.php" style="color:black;">
+                        <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows2['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                        <div class="product" style="text-align:center;"><?php echo $rows2['Product'];?></div>                 
+                        <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows2['Cost']);?></div> 
+                        <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                    </a>
+                </div>
+                <div class="slot3">
+                    <a href="../products1admin/slot1.php" style="color:black;">
+                        <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows3['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                        <div class="product" style="text-align:center;"><?php echo $rows3['Product'];?></div>                 
+                        <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows3['Cost']);?></div> 
+                        <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                    </a>
+                </div>
+                <div class="slot4">
+                    <a href="../products1admin/slot1.php" style="color:black;">
+                        <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows4['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                        <div class="product" style="text-align:center;"><?php echo $rows4['Product'];?></div>                 
+                        <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows4['Cost']);?></div> 
+                        <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                    </a>
+                </div>
+                <div class="slot5">
+                    <a href="../products1admin/slot1.php" style="color:black;">
+                        <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows5['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                        <div class="product" style="text-align:center;"><?php echo $rows5['Product'];?></div>                 
+                        <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows5['Cost']);?></div> 
+                        <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                    </a>
+                </div>
+                <div class="slot6">
+                    <a href="../products1admin/slot1.php" style="color:black;">
+                        <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows6['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                        <div class="product" style="text-align:center;"><?php echo $rows6['Product'];?></div>                 
+                        <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows6['Cost']);?></div> 
+                        <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                    </a>
+                </div>
+                <div class="slot7">
+                    <a href="../products1admin/slot1.php" style="color:black;">
+                        <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows7['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                        <div class="product" style="text-align:center;"><?php echo $rows7['Product'];?></div>                 
+                        <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows7['Cost']);?></div> 
+                        <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                    </a>
+                </div>
+                <div class="slot8">
+                    <a href="../products1admin/slot1.php" style="color:black;">
+                        <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows8['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                        <div class="product" style="text-align:center;"><?php echo $rows8['Product'];?></div>                 
+                        <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows8['Cost']);?></div> 
+                        <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                    </a>
+                </div>
+                <div class="slot9">
+                    <a href="../products1admin/slot1.php" style="color:black;">
+                        <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows9['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                        <div class="product" style="text-align:center;"><?php echo $rows9['Product'];?></div>                 
+                        <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows9['Cost']);?></div> 
+                        <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                    </a>
+                </div>
+                <div class="slot10">
+                    <a href="../products1admin/slot1.php" style="color:black;">
+                        <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows10['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                        <div class="product" style="text-align:center;"><?php echo $rows10['Product'];?></div>                 
+                        <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows10['Cost']);?></div> 
+                        <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                    </a>
+                </div>
+                <div class="slot11">
+                    <a href="../products1admin/slot1.php" style="color:black;">
+                        <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows11['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                        <div class="product" style="text-align:center;"><?php echo $rows11['Product'];?></div>                 
+                        <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows11['Cost']);?></div> 
+                        <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                    </a>
+                </div>
+                <div class="slot12">
+                    <a href="../products1admin/slot1.php" style="color:black;">
+                        <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows12['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                        <div class="product" style="text-align:center;"><?php echo $rows12['Product'];?></div>                 
+                        <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows12['Cost']);?></div> 
+                        <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                    </a>
+                </div>
+                <div class="slot13">
+                    <a href="../products1admin/slot1.php" style="color:black;">
+                        <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows13['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                        <div class="product" style="text-align:center;"><?php echo $rows13['Product'];?></div>                 
+                        <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows13['Cost']);?></div> 
+                        <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                    </a>
+                </div>
+                <div class="slot14">
+                    <a href="../products1admin/slot1.php" style="color:black;">
+                        <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows14['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                        <div class="product" style="text-align:center;"><?php echo $rows14['Product'];?></div>                 
+                        <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows14['Cost']);?></div> 
+                        <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                    </a>
+                </div>
+                <div class="slot15">
+                    <a href="../products1admin/slot1.php" style="color:black;">
+                        <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows15['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                        <div class="product" style="text-align:center;"><?php echo $rows15['Product'];?></div>                 
+                        <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows15['Cost']);?></div> 
+                        <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                    </a>
+                </div>
+                <div class="slot16">
+                    <a href="../products1admin/slot1.php" style="color:black;">
+                        <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/sellcia.appspot.com/o/uploads%2F<?php echo $rows16['Image'];?>?alt=media" alt="" style="max-height:150px; display:block; margin:auto;"></div>
+                        <div class="product" style="text-align:center;"><?php echo $rows16['Product'];?></div>                 
+                        <div class="price" style="text-align:center; font-weight:bold;">KSh <?php echo number_format($rows16['Cost']);?></div> 
+                        <input type="submit" value="BUY NOW" style="color:white; background-color:rgb(63, 170, 104); border:none; border-radius:5px; display:block; margin:auto;" border="0" name="submit" alt="">
+                    </a>
+                </div>
+                            
+            </div>
+        </div>
+
+        <br><br>
 <div class="kay">
 <h1>Online Shopping with Sellcia Kenya - Africa's No 1 Online Store</h1>
 <p><b>VELA Kenya</b> is your number one Online Shopping solution. 
@@ -511,7 +406,11 @@ You can purchase all your mobile phones, tablets, computers,laptops, and more on
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
-    <script src="../js/slider.js"></script>
-    <script src="../js/fonts.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/fonts.js"></script>
+    <script src="carouFredsel.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/man.js"></script>
+    <script src="https://kit.fontawesome.com/d8eb151765.js" crossorigin="anonymous"></script>
 </body>
 </html>
